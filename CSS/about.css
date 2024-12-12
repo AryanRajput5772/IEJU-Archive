@@ -1,0 +1,256 @@
+section {
+  width: 1400px;
+  height: 800px;
+}
+#about {
+  padding-top: 0px;
+
+  margin-top: 110px;
+  position: relative; /* Necessary for the child (.photo) to be positioned relative to this section */
+}
+
+.photo {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  background-size: cover;
+  position: absolute; /* Absolute positioning to move it outside the section */
+  top: -100px; /* Move half the height (125px) outside the section */
+  left: 0px; /* Optional: Adjust horizontal positioning */
+  border: 20px solid rgb(118 33 131);
+  box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.2);
+  clip-path: circle(125px at center); /* Ensures the shadow is outside */
+  z-index: 1;
+}
+
+.photo img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.para {
+  margin-top: 80px;
+  font-size: 27px;
+  color: #0a0908;
+  font-weight: 700;
+  font-family: papyrus;
+  margin-left: 30px;
+}
+h1 {
+  margin-left: 445px;
+  font-size: 80px;
+  margin-top: 20px;
+  color: #0a0908;
+  font-family: harrington;
+}
+
+.study {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  right: 100px;
+  bottom: 50px;
+}
+.lkdn {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  opacity: 0.8;
+}
+.githb {
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  left: 200px;
+  bottom: 100px;
+  opacity: 0.8;
+  border-radius: 25px;
+}
+.lkdn:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.2);
+}
+.githb:hover {
+  opacity: 1;
+  box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.2);
+}
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+h1 span:nth-child(1) {
+  animation: fade-in 1s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+h1 span:nth-child(2) {
+  animation: fade-in 1s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(1) {
+  animation: fade-in 1s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(2) {
+  animation: fade-in 1s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(3) {
+  animation: fade-in 1s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(4) {
+  animation: fade-in 1s 2.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(5) {
+  animation: fade-in 1s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(6) {
+  animation: fade-in 1s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(7) {
+  animation: fade-in 1s 2.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(8) {
+  animation: fade-in 1s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+p span:nth-child(9) {
+  animation: fade-in 1s 2.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+
+    filter: blur(0);
+  }
+}
+
+.h {
+  color: transparent;
+  background: linear-gradient(to right, #f87503, #0386f8, #f8ba03, #f003f8);
+  -webkit-background-clip: text;
+}
+
+.brand {
+  color: transparent;
+  background: linear-gradient(to right, #f904ff, #ea6e00ba, #fd0d0d);
+  -webkit-background-clip: text;
+}
+
+.photo img {
+  transition: all ease 1s;
+}
+
+.photo:hover img {
+  scale: 1.2;
+}
+
+@media (max-width: 700px) {
+  section {
+    width: 500px;
+    height: 1213px;
+  }
+  h1 {
+    margin-left: 50px;
+    font-size: 57px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .para {
+    margin-top: 50px;
+    font-size: 25px;
+    color: #0a0908;
+    font-weight: 600;
+    margin-left: 30px;
+  }
+  .photo {
+    height: 170px;
+    width: 170px;
+    left: 166px;
+    top: -80px;
+    position: absolute;
+    border: 20px solid rgb(116 35 133);
+    box-shadow: -1px -20px 14px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .study {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 30px;
+    bottom: 40px;
+  }
+  .lkdn {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 45px;
+    bottom: 96px;
+  }
+  .githb {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: 140px;
+    bottom: 93px;
+  }
+}
+@media (max-width: 500px) {
+  section {
+    width: 370px;
+    height: 1350px;
+  }
+  h1 {
+    margin-left: 30px;
+    font-size: 40px;
+    margin-top: 100px;
+    margin-bottom: 10px;
+  }
+  .para {
+    margin-top: 50px;
+    font-size: 21px;
+    color: #0a0908;
+    font-weight: 700;
+    margin-left: 4px;
+  }
+  .photo {
+    height: 170px;
+    width: 170px;
+    left: 95px;
+    top: -80px;
+    position: absolute;
+    border: 20px solid rgb(118 33 131);
+    box-shadow: 0px -14px 20px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .study {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    right: 88px;
+    bottom: 26px;
+  }
+  .lkdn {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 103px;
+    bottom: 261px;
+  }
+  .githb {
+    height: 55px;
+    width: 55px;
+    position: absolute;
+    left: 193px;
+    bottom: 260px;
+  }
+}

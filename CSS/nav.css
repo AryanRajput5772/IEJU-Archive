@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.Header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 3%;
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-left: 0;
+  height: 80px;
+  overflow: hidden;
+}
+.Header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(50px);
+  z-index: -1;
+}
+
+.navbar a {
+  font-size: 1.25rem;
+  color: #d96d32;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 2.5rem;
+  font-family: harrington;
+}
+
+#check {
+  display: none;
+}
+
+.icons {
+  position: absolute;
+  right: 5%;
+  font-size: 2.8rem;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .Header {
+    padding: 1.3rem 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: inline-flex;
+  }
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+  .navbar-brand {
+    position: fixed;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(50px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+
+  #check:checked ~ .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 17rem;
+    visibility: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    backdrop-filter: blur(50px);
+  }
+  .navbar a {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    opacity: 0;
+    justify-content: center;
+    transform: translateY(-50px);
+    /* transition: 0.3s ease; */
+  }
+
+  #check:checked ~ .navbar a {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 0.3s ease;
+    transition-delay: calc(0.15s * var(--i));
+  }
+}

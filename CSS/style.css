@@ -1,0 +1,286 @@
+/* Global styles */
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  max-height: max-content;
+  max-height: 100%;
+  background: linear-gradient(135deg, #6c0471 0%, #0d4eb7 100%);
+  color: #fff;
+  animation: gradient-animation 5s ease infinite;
+  background-size: 400% 400%;
+}
+
+/* Header styles */
+.Welcome {
+  background: transparent;
+  padding: 120px 20px;
+  text-align: center;
+  color: #d96d32;
+  position: relative;
+  z-index: 1;
+  font-family: Colonna MT;
+}
+
+.Welcome span {
+  font-size: 50px;
+  font-weight: 500;
+}
+
+/* .Welcome h2 {
+  color: linear-gradient(to right, #ff7f50, #ffd700);
+  animation: fadeInUp 2s ease forwards;
+}
+
+.Welcome p {
+  font-size: 1.2em;
+  animation: fadeInUp 2s ease forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(70px);
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    transform: scale(1);
+  }
+} */
+
+/* Section styles */
+section {
+  padding: 50px 20px;
+  margin: 40px auto;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  backdrop-filter: blur(5px);
+  box-shadow: -1px -1px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+section h3 {
+  color: #fff;
+
+  text-transform: uppercase;
+}
+
+section p {
+  color: #e0e0e0;
+}
+
+#message {
+  border-radius: 25px;
+  color: purple;
+}
+
+form .btn {
+  background-color: #a1296f;
+  color: #410536;
+  border-radius: 15px;
+}
+form {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  background: #2c2c2c;
+  color: #fff;
+  margin-top: auto;
+}
+.ftr {
+  position: inherit;
+}
+
+footer p {
+  margin-bottom: auto;
+}
+
+.logo {
+  width: 100%; /* Ensures the logo fits the anchor width */
+  height: 100%; /* Ensures the logo fits the anchor height */
+  object-fit: contain; /* Maintains the aspect ratio */
+}
+
+/* Contact Section */
+#contact {
+  width: 600px;
+  height: 500px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Slightly transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact h3 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: transparent;
+  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  -webkit-background-clip: text;
+}
+
+#contact p {
+  text-align: center;
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: transparent;
+  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  -webkit-background-clip: text;
+}
+
+/* Form styling */
+#contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact label {
+  color: #ffffff;
+  margin-bottom: 5px;
+  font-size: 1em;
+  color: transparent;
+  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  -webkit-background-clip: text;
+}
+
+#contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+#contact textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* Button styling */
+#contact .btn {
+  padding: 10px;
+  border: 2px solid goldenrod;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: transparent;
+  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  -webkit-background-clip: text;
+}
+#contact .btn {
+  background-color: #5eea00 !important;
+}
+
+#contact .btn:hover {
+  background-color: #8d00a3;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.cards {
+  text-align: center;
+  height: 300px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.card {
+  height: 100px;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 25px !important;
+  backdrop-filter: blur(15px) !important;
+  box-shadow: 0 20px 25px 14px rgba(0, 0, 0, 0.2) !important;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background: conic-gradient(from 90deg, #f021f3, #941ee9, #f021f3);
+  transition: background 0.5s ease;
+}
+.card:hover {
+  background: linear-gradient(90deg, #db05c9, #57a3ff);
+}
+.card {
+  transform: scale(1);
+  transition: transform 0.4s ease; /* Smooth transition for both hover and unhover */
+}
+
+.card:hover {
+  transform: scale(1.1); /* Scale up smoothly */
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: 400px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+  .cards {
+    height: 600px;
+  }
+}
+
+.p {
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+#ece {
+  border-radius: 5%;
+}
+#ce {
+  height: 115px;
+  width: 115px;
+}
+
+.link h3 {
+  color: black;
+}
+.link {
+  text-decoration: none;
+}
+
+/* ////////////////////////////////////////////////////////// */
+#papers {
+  height: 700px;
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body::-webkit-scrollbar {
+  background-color: #620c79;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(red, blue, green);
+  border-radius: 20px;
+}

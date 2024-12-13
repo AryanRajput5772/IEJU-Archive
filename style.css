@@ -58,7 +58,7 @@ section {
   margin: 40px auto;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  backdrop-filter: blur(5px);
+
   box-shadow: -1px -1px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
@@ -236,13 +236,14 @@ footer p {
 
 @media (max-width: 700px) {
   .card {
-    width: 400px;
+    width: 370px;
     margin-bottom: 30px;
     padding-top: 30px;
     padding-bottom: 20px;
   }
+
   .cards {
-    height: 600px;
+    height: 900px;
   }
 }
 

@@ -207,20 +207,31 @@ p span:nth-child(9) {
 @media (max-width: 500px) {
   section {
     width: 370px;
-    height: 1350px;
+    height: 1380px;
+  }
+  .navbar a {
+    font-family: "Miltonian", serif;
+    font-style: normal;
   }
   h1 {
     margin-left: 30px;
     font-size: 40px;
+    font-weight: 800;
+    font-family: "Moon Dance", cursive;
     margin-top: 100px;
     margin-bottom: 10px;
   }
   .para {
+    font-family: "Moon Dance", cursive;
+    font-style: normal;
     margin-top: 50px;
-    font-size: 21px;
+    font-size: 28px;
     color: #0a0908;
     font-weight: 700;
     margin-left: 4px;
+  }
+  .para span {
+    display: inline;
   }
   .photo {
     height: 170px;

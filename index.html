@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEJU Archive</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="index.css" />
 
     <link
@@ -22,15 +21,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Birthstone&family=Charm:wght@400;700&family=Explora&family=Lobster&family=Playwrite+HR+Lijeva&family=Yuji+Mai&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Birthstone&family=Charm:wght@400;700&family=Explora&family=Italianno&family=Lobster&family=Miltonian&family=Moon+Dance&family=Petit+Formal+Script&family=Playwrite+HR+Lijeva&family=Style+Script&family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap"
       rel="stylesheet" />
+    <link rel="stylesheet" href="nav.css" />
   </head>
   <style>
-    .Welcome span {
-      font-family: "Agu Display", serif;
-      font-weight: 500;
-      font-style: normal;
-      font-size: 40px;
+    @media (max-width: 800px) {
+      .navbar a {
+        font-family: "Miltonian", serif;
+        font-style: normal;
+      }
+      .Welcome span {
+        font-family: "Agu Display", serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+      }
+      span {
+        color: transparent;
+        /* background: linear-gradient(to right, #ff499e, #d264b6, #a480cf, #779be7); */
+        background: linear-gradient(
+          to right,
+          #e6c229,
+          #f17105,
+          #d11149,
+          #01f9ff
+        );
+        -webkit-background-clip: text;
+      }
     }
   </style>
   <body oncontextmenu="return false">

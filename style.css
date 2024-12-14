@@ -25,7 +25,7 @@ body {
 }
 
 .Welcome span {
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 500;
 }
 
@@ -130,19 +130,19 @@ footer p {
 
 #contact h3 {
   text-align: center;
-  font-size: 1.8em;
+  font-size: 42px;
   margin-bottom: 20px;
   color: transparent;
-  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  background: linear-gradient(to right, #d96d32, #f16e05);
   -webkit-background-clip: text;
 }
 
 #contact p {
   text-align: center;
-  font-size: 1em;
+  font-size: 27px;
   margin-bottom: 20px;
   color: transparent;
-  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  background: linear-gradient(to right, #d96d32, #f16e05);
   -webkit-background-clip: text;
 }
 
@@ -155,9 +155,9 @@ footer p {
 #contact label {
   color: #ffffff;
   margin-bottom: 5px;
-  font-size: 1em;
+  font-size: 20px;
   color: transparent;
-  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  background: linear-gradient(to right, #d96d32, #f16e05);
   -webkit-background-clip: text;
 }
 
@@ -183,7 +183,7 @@ footer p {
   cursor: pointer;
   transition: background-color 0.3s ease;
   color: transparent;
-  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #6610f2);
+  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #7c43d8);
   -webkit-background-clip: text;
 }
 #contact .btn {
@@ -234,7 +234,7 @@ footer p {
   transform: scale(1.1); /* Scale up smoothly */
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .card {
     width: 370px;
     margin-bottom: 30px;

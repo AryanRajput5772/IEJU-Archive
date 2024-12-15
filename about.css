@@ -34,7 +34,7 @@ section {
   font-size: 27px;
   color: #0a0908;
   font-weight: 700;
-  font-family: papyrus;
+  font-family: papyrus, "Moon Dance", cursive;
   margin-left: 30px;
 }
 h1 {
@@ -42,7 +42,7 @@ h1 {
   font-size: 80px;
   margin-top: 20px;
   color: #0a0908;
-  font-family: harrington;
+  font-family: harrington, "Moon Dance", cursive;
 }
 
 .study {

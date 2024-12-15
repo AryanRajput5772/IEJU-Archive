@@ -21,7 +21,7 @@ body {
   color: #d96d32;
   position: relative;
   z-index: 1;
-  font-family: Colonna MT;
+  font-family: Colonna MT, "Moon Dance", cursive;
 }
 
 .Welcome span {

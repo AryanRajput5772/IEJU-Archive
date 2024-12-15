@@ -197,17 +197,18 @@ footer p {
 
 .cards {
   text-align: center;
-  height: 300px;
+  height: 270px;
   width: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  margin-bottom: 20px;
 }
 
 .card {
   height: 100px;
-  width: 300px;
+  width: 270px;
   background-color: rgba(255, 255, 255, 0.1) !important;
   border-radius: 25px !important;
   backdrop-filter: blur(15px) !important;

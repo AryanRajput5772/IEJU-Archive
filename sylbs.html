@@ -43,9 +43,14 @@
         padding: 30px;
         text-align: center;
       }
+      table th,
+      table th sup {
+        font-weight: 800;
+        font-size: 40px;
+      }
       @media (max-width: 720px) {
         #papers {
-          width: 360px;
+          width: 527px;
         }
 
         .navbar a {
@@ -73,7 +78,7 @@
         th,
         tr,
         td {
-          font-size: 23px;
+          /* font-size: 23px; */
           padding: 5px;
         }
         table td {
@@ -93,11 +98,6 @@
         color: black;
         font-weight: 600;
       }
-      table th,
-      table th sup {
-        font-weight: 800;
-        font-size: 40px;
-      }
 
       table a:hover {
         color: transparent;
@@ -113,8 +113,16 @@
 
       @media (max-width: 400px) {
         td {
-          font-size: 16px;
+          font-size: 20px;
           padding: 7px;
+        }
+        table th,
+        table th sup {
+          font-weight: 800;
+          font-size: 25px;
+        }
+        #papers {
+          width: 360px;
         }
       }
     </style>

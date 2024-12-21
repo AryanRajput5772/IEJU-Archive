@@ -6,6 +6,59 @@
     <title>CSE-Branch</title>
     <link rel="stylesheet" href="nav.css" />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .cards {
+        height: 300px;
+        width: 250px;
+        background: linear-gradient(to right, #8805f4, #fc03eb);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 25px;
+        transition: transform 0.6s ease;
+        box-shadow: 20px 20px 20px 7px rgba(0, 0, 0, 0.2);
+      }
+
+      .cards:hover {
+        transform: scale(1.15);
+      }
+
+      .container {
+        margin-top: 250px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .cards p {
+        font-size: 30px;
+        margin-top: -7px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .cards a {
+        position: relative;
+        padding: 8px 40px;
+        background: blue;
+        border-radius: 5px;
+        text-decoration: none;
+        color: white;
+        margin-top: 27px;
+        box-shadow: inset 0px 0px 9px 9px rgba(0, 0, 0, 0.2);
+        transition: 0.5s;
+      }
+      .cards a:hover {
+        background: rgb(124, 239, 10);
+        color: rgb(0, 0, 0);
+      }
+
+      .cards .odd {
+        margin-top: 58px;
+      }
+    </style>
   </head>
   <body>
     <header class="Header">
@@ -27,5 +80,30 @@
         <a href="contact.html" style="--i: 2">Contact Us</a>
       </nav>
     </header>
+    <div class="container">
+      <div class="cards">
+        <p>1st YEAR</p>
+        <a href="#" class="odd">1st SEM</a>
+        <a href="#">2nd SEM</a>
+      </div>
+
+      <div class="cards">
+        <p>2nd YEAR</p>
+        <a href="#" class="odd">3rd SEM</a>
+        <a href="#">4th SEM</a>
+      </div>
+
+      <div class="cards">
+        <p>3rd YEAR</p>
+        <a href="#" class="odd">5th SEM</a>
+        <a href="#">6th SEM</a>
+      </div>
+
+      <div class="cards">
+        <p>4th YEAR</p>
+        <a href="#" class="odd">7th SEM</a>
+        <a href="#">8th SEM</a>
+      </div>
+    </div>
   </body>
 </html>

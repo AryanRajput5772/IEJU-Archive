@@ -24,8 +24,35 @@
       href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Birthstone&family=Charm:wght@400;700&family=Explora&family=Italianno&family=Lobster&family=Miltonian&family=Moon+Dance&family=Petit+Formal+Script&family=Playwrite+HR+Lijeva&family=Style+Script&family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="nav.css" />
+    <script>
+      window.onload = function () {
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+      };
+    </script>
   </head>
   <style>
+    .content {
+      display: none;
+    }
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      /* background: #000000; */
+      background: #171c1d;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .loader img {
+      width: 400px;
+      height: 300px;
+    }
+
     @media (max-width: 800px) {
       .navbar a {
         font-family: "Miltonian", serif;
@@ -51,56 +78,64 @@
       }
     }
   </style>
+  <!--Another loader ->  https://i.gifer.com/embedded/download/9hHa.gif-->
   <body oncontextmenu="return false">
-    <header class="Header">
-      <a
-        class="navbar-brand"
-        href="index.html
+    <div class="loader">
+      <img
+        src=" https://i.pinimg.com/originals/dc/cc/84/dccc846959dffafa30a836dfacf9bab9.gif "
+        alt="" />
+    </div>
+    <div class="content">
+      <header class="Header">
+        <a
+          class="navbar-brand"
+          href="index.html
         "
-        ><img src="logo.png" alt="logo" class="logo"
-      /></a>
-      <input type="checkbox" name="" id="check" />
-      <label for="check" class="icons">
-        <i class="bx bx-menu" id="menu-icon"></i>
-        <i class="bx bx-x" id="close-icon"></i>
-      </label>
+          ><img src="logo.png" alt="logo" class="logo"
+        /></a>
+        <input type="checkbox" name="" id="check" />
+        <label for="check" class="icons">
+          <i class="bx bx-menu" id="menu-icon"></i>
+          <i class="bx bx-x" id="close-icon"></i>
+        </label>
 
-      <nav class="navbar">
-        <a href="sylbs.html" style="--i: 0">Syllabus</a>
-        <a href="about.html" style="--i: 1">About</a>
-        <a href="contact.html" style="--i: 2">Contact Us</a>
-      </nav>
-    </header>
+        <nav class="navbar">
+          <a href="sylbs.html" style="--i: 0">Syllabus</a>
+          <a href="about.html" style="--i: 1">About</a>
+          <a href="contact.html" style="--i: 2">Contact Us</a>
+        </nav>
+      </header>
 
-    <header class="Welcome">
-      <h2>
-        <span>WELCOME</span> &nbsp;<span>TO</span>&nbsp; <span>IEJU</span>&nbsp;
-        <span>ARCHIVE</span><br />
-        <span>Your</span>&nbsp; <span>one-stop</span>&nbsp;
-        <span>destination</span>&nbsp; <span>for</span>&nbsp;
-        <span>previous</span>&nbsp; <span>year</span>&nbsp;
-        <span>questions</span>&nbsp;
-      </h2>
-    </header>
+      <header class="Welcome">
+        <h2>
+          <span>WELCOME</span> &nbsp;<span>TO</span>&nbsp;
+          <span>IEJU</span>&nbsp; <span>ARCHIVE</span><br />
+          <span>Your</span>&nbsp; <span>one-stop</span>&nbsp;
+          <span>destination</span>&nbsp; <span>for</span>&nbsp;
+          <span>previous</span>&nbsp; <span>year</span>&nbsp;
+          <span>questions</span>&nbsp;
+        </h2>
+      </header>
 
-    <div class="cards">
-      <div class="card">
-        <a href="cseBranch.html" class="link">
-          <img src="cse.png" class="p" draggable="false" />
-          <h3>CSE</h3>
-        </a>
-      </div>
-      <div class="card">
-        <a href="eeBranch.html" class="link">
-          <img src="ece.png" class="p" id="ece" draggable="false" />
-          <h3>Electronics</h3>
-        </a>
-      </div>
-      <div class="card">
-        <a href="ceBranch.html" class="link">
-          <img src="ce.png" class="p" id="ce" draggable="false" />
-          <h3>Chemical</h3>
-        </a>
+      <div class="cards">
+        <div class="card">
+          <a href="cseBranch.html" class="link">
+            <img src="cse.png" class="p" draggable="false" />
+            <h3>CSE</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="eeBranch.html" class="link">
+            <img src="ece.png" class="p" id="ece" draggable="false" />
+            <h3>Electronics</h3>
+          </a>
+        </div>
+        <div class="card">
+          <a href="ceBranch.html" class="link">
+            <img src="ce.png" class="p" id="ce" draggable="false" />
+            <h3>Chemical</h3>
+          </a>
+        </div>
       </div>
     </div>
   </body>

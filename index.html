@@ -52,8 +52,16 @@
       width: 400px;
       height: 300px;
     }
-
+    .card1 {
+      margin-left: 165px;
+    }
     @media (max-width: 800px) {
+      .card1 {
+        margin-left: 0px;
+      }
+      .card3 {
+        margin-left: 21px;
+      }
       .navbar a {
         font-family: "Miltonian", serif;
         font-style: normal;
@@ -76,15 +84,6 @@
         );
         -webkit-background-clip: text;
       }
-    }
-    .vid {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .vid iframe {
-      border-radius: 20px;
-      box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
     }
   </style>
   <!--Another loader ->  https://i.gifer.com/embedded/download/9hHa.gif-->
@@ -127,7 +126,7 @@
       </header>
 
       <div class="cards">
-        <div class="card">
+        <div class="card1 card">
           <a href="cseBranch.html" class="link">
             <img src="cse.png" class="p" draggable="false" />
             <h3>CSE</h3>
@@ -139,28 +138,13 @@
             <h3>Electronics</h3>
           </a>
         </div>
-        <div class="card">
+        <div class="card card3">
           <a href="ceBranch.html" class="link">
             <img src="ce.png" class="p" id="ce" draggable="false" />
             <h3>Chemical</h3>
           </a>
         </div>
         <br />
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <div class="vid">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/xk07LyyAKYU?si=2DTZKcOh3xxLe3Gh"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen></iframe>
       </div>
     </div>
   </body>

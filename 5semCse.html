@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSE-Branch</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .cards {
+        height: 400px;
+        width: 450px;
+        background: linear-gradient(to right, #5d33cc, #da6d2e);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 25px;
+        margin-bottom: 90px;
+        transition: transform 0.6s ease;
+        box-shadow: -20px 20px 20px 10px #000000;
+      }
+      .cards:hover {
+        transform: scale(1.1);
+      }
+
+      .container {
+        margin-top: 250px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .cards p {
+        font-size: 20px;
+        margin-top: 0px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        font-family: cursive;
+        margin-top: -279px;
+      }
+      .notes {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+      }
+      .notes a {
+        text-decoration: none;
+        color: #000000;
+        font-size: 23px;
+        font-family: cursive;
+      }
+      .cards a:hover {
+        color: transparent;
+        background: linear-gradient(to right, #2fff00, #0006ff);
+
+        -webkit-background-clip: text;
+      }
+
+      .cards .odd {
+        margin-top: 58px;
+      }
+      @media (max-width: 800px) {
+        .cards {
+          height: 300px;
+          width: 250px;
+        }
+        .notes a {
+          font-size: 18px;
+        }
+        .cards p {
+          font-size: 16px;
+          margin-top: -222px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="Header">
+      <a
+        class="navbar-brand"
+        href="index.html
+      "
+        ><img src="logo.png" alt="logo" class="logo"
+      /></a>
+      <input type="checkbox" name="" id="check" />
+      <label for="check" class="icons">
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <i class="bx bx-x" id="close-icon"></i>
+      </label>
+
+      <nav class="navbar">
+        <a href="sylbs.html" style="--i: 0">Syllabus</a>
+        <a href="about.html" style="--i: 1">About</a>
+        <a href="contact.html" style="--i: 2">Contact Us</a>
+      </nav>
+    </header>
+    <div class="container">
+      <div class="cards">
+        <p>501 - (Data Communication)</p>
+        <br />
+        <div class="notes">
+          <a href="#">Books</a>
+          <a href="#">Notes: UNIT - 1</a>
+          <a href="#">Notes: UNIT - 2</a>
+          <a href="#">Notes: UNIT - 3</a>
+          <a href="#">Notes: UNIT - 4</a>
+          <a href="#">Notes: UNIT - 5</a>
+          <a href="#">Previous Year Questions</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <p>502 - (Operating System)</p>
+        <br />
+        <div class="notes">
+          <a href="#">Books</a>
+          <a href="#">Notes: UNIT - 1</a>
+          <a href="#">Notes: UNIT - 2</a>
+          <a href="#">Notes: UNIT - 3</a>
+          <a href="#">Notes: UNIT - 4</a>
+          <a href="#">Notes: UNIT - 5</a>
+          <a href="#">Previous Year Questions</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <p>503 - (Data Base Management System)</p>
+        <br />
+        <div class="notes">
+          <a href="#">Books</a>
+          <a href="#">Notes: UNIT - 1</a>
+          <a href="#">Notes: UNIT - 2</a>
+          <a href="#">Notes: UNIT - 3</a>
+          <a href="#">Notes: UNIT - 4</a>
+          <a href="#">Notes: UNIT - 5</a>
+          <a href="#">Previous Year Questions</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <p>504 - (Computer Graphics & Multimedia)</p>
+        <br />
+        <div class="notes">
+          <a href="#">Books</a>
+          <a href="#">Notes: UNIT - 1</a>
+          <a href="#">Notes: UNIT - 2</a>
+          <a href="#">Notes: UNIT - 3</a>
+          <a href="#">Notes: UNIT - 4</a>
+          <a href="#">Notes: UNIT - 5</a>
+          <a href="#">Previous Year Questions</a>
+        </div>
+      </div>
+
+      <div class="cards">
+        <p>505 - (Theory of Computation)</p>
+        <br />
+        <div class="notes">
+          <a href="#">Books</a>
+          <a href="#">Notes: UNIT - 1</a>
+          <a href="#">Notes: UNIT - 2</a>
+          <a href="#">Notes: UNIT - 3</a>
+          <a href="#">Notes: UNIT - 4</a>
+          <a href="#">Notes: UNIT - 5</a>
+          <a href="#">Previous Year Questions</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

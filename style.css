@@ -212,7 +212,7 @@ footer p {
   background-color: rgba(255, 255, 255, 0.1) !important;
   border-radius: 25px !important;
   backdrop-filter: blur(15px) !important;
-  box-shadow: 0 20px 25px 14px rgba(0, 0, 0, 0.2) !important;
+  box-shadow: -19px 20px 25px 20px rgb(7 7 7 / 57%) !important;
 }
 .card {
   display: flex;
@@ -236,6 +236,16 @@ footer p {
 }
 
 @media (max-width: 800px) {
+  .cards {
+    text-align: center;
+    height: 270px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
   .card {
     width: 320px;
     margin-bottom: 30px;

@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSE-Branch</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
     <link rel="stylesheet" href="nav.css" />
     <style>
       .cards {
-        height: 300px;
-        width: 250px;
+        height: 364px;
+        width: 333px;
         background: linear-gradient(to right, #8805f4, #fc03eb);
         display: flex;
         justify-content: center;
@@ -57,6 +61,12 @@
 
       .cards .odd {
         margin-top: 58px;
+      }
+      @media (max-width: 500px) {
+        .cards {
+          margin-bottom: 85px;
+          transform: none !important;
+        }
       }
     </style>
   </head>

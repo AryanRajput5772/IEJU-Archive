@@ -295,11 +295,12 @@ footer p {
 
 /* ////////////////////////////////////////////////////////// */
 #papers {
-  height: 700px;
+  height: 800px;
   width: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 110px;
 }
 
 body::-webkit-scrollbar {

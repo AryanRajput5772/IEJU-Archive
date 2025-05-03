@@ -241,6 +241,11 @@ footer p {
   transform: scale(1.1); /* Scale up smoothly */
 }
 
+@media (max-width: 400px) {
+  body {
+    background-size: 60%;
+  }
+}
 @media (max-width: 800px) {
   .cards {
     text-align: center;

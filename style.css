@@ -241,9 +241,9 @@ footer p {
   transform: scale(1.1); /* Scale up smoothly */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   body {
-    background-size: 60%;
+    background-size: 80%;
   }
 }
 @media (max-width: 800px) {

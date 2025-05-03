@@ -6,7 +6,9 @@ section {
   padding-top: 0px;
 
   margin-top: 110px;
-  position: relative; /* Necessary for the child (.photo) to be positioned relative to this section */
+  position: relative;
+  top: 100px;
+  margin-bottom: 150px; /* Necessary for the child (.photo) to be positioned relative to this section */
 }
 
 .photo {
@@ -18,7 +20,7 @@ section {
   position: absolute; /* Absolute positioning to move it outside the section */
   top: -100px; /* Move half the height (125px) outside the section */
   left: 0px; /* Optional: Adjust horizontal positioning */
-  border: 20px solid rgb(118 33 131);
+  border: 20px solid #6a2a8a;
   box-shadow: 0px -20px 20px 0px rgba(0, 0, 0, 0.2);
   clip-path: circle(125px at center); /* Ensures the shadow is outside */
   z-index: 1;
@@ -158,6 +160,7 @@ p span:nth-child(9) {
   section {
     width: 500px;
     height: 1213px;
+    top: 25px !important;
   }
   h1 {
     margin-left: 50px;
@@ -181,7 +184,7 @@ p span:nth-child(9) {
     left: 166px;
     top: -80px;
     position: absolute;
-    border: 20px solid rgb(116 35 133);
+    border: 20px solid #6a2a8a;
     box-shadow: -1px -20px 14px 0px rgba(0, 0, 0, 0.2);
   }
 
@@ -215,6 +218,7 @@ p span:nth-child(9) {
   section {
     width: 370px;
     height: 1380px;
+    top: 6px !important;
   }
   .navbar a {
     font-family: "Miltonian", serif;
@@ -246,7 +250,7 @@ p span:nth-child(9) {
     left: 95px;
     top: -80px;
     position: absolute;
-    border: 20px solid rgb(118 33 131);
+    border: 20px solid #6a2a8a;
     box-shadow: 0px -14px 20px 0px rgba(0, 0, 0, 0.2);
   }
 

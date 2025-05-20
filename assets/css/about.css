@@ -2,6 +2,9 @@ section {
   width: 1400px;
   height: 800px;
 }
+* {
+  user-select: none;
+}
 #about {
   padding-top: 0px;
 

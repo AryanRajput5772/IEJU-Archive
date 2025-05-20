@@ -75,6 +75,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .bx {
+    color: #da6c2f;
+  }
   .icons {
     display: inline-flex;
   }
@@ -130,5 +133,55 @@ body {
     transform: translateY(0);
     transition: 0.3s ease;
     transition-delay: calc(0.15s * var(--i));
+  }
+  .menu-btn {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    left: 88%;
+    width: 30px;
+    height: 20px;
+  }
+  .menu-icon,
+  .menu-icon::before,
+  .menu-icon::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: #da6c2f;
+    border-radius: 2px;
+    position: absolute;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .menu-icon {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-background-clip: unset;
+  }
+
+  .menu-icon::before {
+    top: -10px;
+  }
+
+  .menu-icon::after {
+    top: 10px;
+  }
+
+  /* When checked (showing 'X') */
+  #check:checked + label .menu-icon {
+    background-color: transparent;
+  }
+
+  #check:checked + label .menu-icon::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  #check:checked + label .menu-icon::after {
+    transform: rotate(-45deg);
+    top: 0;
   }
 }

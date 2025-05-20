@@ -69,11 +69,14 @@
       margin-left: 165px;
     }
     @media (max-width: 800px) {
+      .cards {
+        scale: 0.9;
+      }
       .card1 {
         margin-left: 0px;
       }
       .card3 {
-        margin-left: 21px;
+        margin-left: 12px;
       }
       .navbar a {
         font-family: "Miltonian", serif;
@@ -85,7 +88,7 @@
         font-style: normal;
         font-size: 30px;
       }
-      span {
+      span:not(.menu-icon) {
         color: transparent;
         /* background: linear-gradient(to right, #ff499e, #d264b6, #a480cf, #779be7); */
         background: linear-gradient(
@@ -114,10 +117,9 @@
         "
           ><img src="./assets/images/logo.png" alt="logo" class="logo"
         /></a>
-        <input type="checkbox" name="" id="check" />
-        <label for="check" class="icons">
-          <i class="bx bx-menu" id="menu-icon"></i>
-          <i class="bx bx-x" id="close-icon"></i>
+        <input type="checkbox" id="check" hidden />
+        <label for="check" class="menu-btn">
+          <span class="menu-icon"></span>
         </label>
 
         <nav class="navbar">
@@ -129,12 +131,17 @@
 
       <header class="Welcome">
         <h2>
-          <span>WELCOME</span> &nbsp;<span>TO</span>&nbsp;
-          <span>IEJU</span>&nbsp; <span>ARCHIVE</span><br />
-          <span>Your</span>&nbsp; <span>one-stop</span>&nbsp;
-          <span>destination</span>&nbsp; <span>for</span>&nbsp;
-          <span>previous</span>&nbsp; <span>year</span>&nbsp;
-          <span>questions</span>&nbsp;
+          <span class="heading">WELCOME</span>&nbsp;
+          <span class="heading">TO</span>&nbsp;
+          <span class="heading">IEJU</span>&nbsp;
+          <span class="heading">ARCHIVE</span><br />
+          <span class="heading">Your</span>&nbsp;
+          <span class="heading">one-stop</span>&nbsp;
+          <span class="heading">destination</span>&nbsp;
+          <span class="heading">for</span>&nbsp;
+          <span class="heading">previous</span>&nbsp;
+          <span class="heading">year</span>&nbsp;
+          <span class="heading">questions</span>&nbsp;
         </h2>
       </header>
 

@@ -79,7 +79,8 @@ h1 {
   opacity: 1;
   box-shadow: 0px 0px 20px 14px rgba(0, 0, 0, 0.2);
 }
-span {
+h1 span,
+p span {
   display: inline-block;
   opacity: 0;
   filter: blur(4px);

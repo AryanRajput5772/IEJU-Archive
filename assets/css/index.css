@@ -113,7 +113,7 @@ span:nth-child(12) {
   box-shadow: inset 0px -1px 6px 5px;
   overflow: hidden;
   overflow-y: auto;
-  transition: 0.5s linear;
+  transition: 0.5s;
   color: #000000;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -124,13 +124,11 @@ span:nth-child(12) {
 }
 
 .accordion .contentbox.active .Content {
-  max-height: 1000px;
-  height: auto;
+  max-height: 500px;
   padding: 25px;
+  height: auto;
 }
-.accordion .Content::-webkit-scrollbar {
-  width: 6px;
-}
+
 .accordion .Content {
   scroll-margin-top: 0px; /* Prevents scroll jump */
 }
@@ -146,8 +144,15 @@ span:nth-child(12) {
   color: #e36e14;
 }
 
-/* @media (max-width: 600px) {
-  .accordion .contentbox.active .Content {
-    height: 150px;
+@media (max-width: 500px) {
+  .accordion .contentbox .label::before {
+    content: "^";
+    transform: translateY(-40%);
+    font-weight: 900;
   }
-} */
+  .accordion .contentbox.active .label::before {
+    content: "^";
+    transform: translateY(-70%) rotate(180deg);
+    font-weight: 900;
+  }
+}

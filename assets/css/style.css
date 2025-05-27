@@ -173,7 +173,7 @@ footer p {
 #contact textarea {
   padding: 10px;
   border-radius: 5px;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 15px;
   color: #333;
 }
@@ -185,15 +185,16 @@ footer p {
 
 /* Button styling */
 #contact .btn {
-  padding: 10px;
-  border: 2px solid goldenrod;
-  border-radius: 5px;
-  font-size: 1.1em;
+  padding: 8px;
+  /* border: 1px solid #5a16ff; */
+  border-radius: 42px;
+  font-size: 22px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
-  color: transparent;
-  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #7c43d8);
-  -webkit-background-clip: text;
+  /* transition: background-color 0.3s ease; */
+  /* color: transparent; */
+  background: linear-gradient(to right, #0076ff, #f17105, #0743ff);
+  font-weight: 600;
+  box-shadow: inset 0px 0px 7px 6px rgb(7 7 7);
 }
 #contact .btn {
   background-color: #5eea00 !important;

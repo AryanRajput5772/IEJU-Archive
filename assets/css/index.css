@@ -147,12 +147,16 @@ span:nth-child(12) {
 @media (max-width: 500px) {
   .accordion .contentbox .label::before {
     content: "^";
-    transform: translateY(-40%);
+    transform: translateY(-60%) rotate(180deg);
+    transform-origin: center;
+    transition: 0.5s;
     font-weight: 900;
   }
   .accordion .contentbox.active .label::before {
     content: "^";
-    transform: translateY(-70%) rotate(180deg);
+    transform: translateY(-40%);
+    /* transform-origin: center; */
+    transition: 0.5s;
     font-weight: 900;
   }
 }

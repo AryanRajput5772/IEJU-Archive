@@ -98,12 +98,14 @@ span:nth-child(12) {
   position: absolute;
   top: 50%;
   right: 20px;
+  transition: 0.5s;
   transform: translateY(-50%);
   font-size: 1.5em;
 }
 
 .accordion .contentbox.active .label::before {
-  content: "⮝";
+  transform: translateY(-50%) rotate(-180deg);
+  transition: 0.5s;
 }
 
 .accordion .contentbox .Content {

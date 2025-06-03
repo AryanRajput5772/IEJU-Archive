@@ -144,6 +144,7 @@ span:nth-child(12) {
   width: 100%;
   margin: 0 auto;
   color: #e36e14;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 @media (max-width: 500px) {
@@ -178,6 +179,7 @@ span:nth-child(12) {
   width: 100%;
   margin: 0 auto;
   color: #e36e14;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .testimonials .element {
   font-size: 16px;
@@ -212,7 +214,7 @@ span:nth-child(12) {
   color: transparent;
   background: linear-gradient(to right, #0676ff, #f1d905, #0743ff);
   -webkit-background-clip: text;
-  font-family: auto;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 900;
   font-size: 19px;
 }

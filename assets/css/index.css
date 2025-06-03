@@ -162,3 +162,67 @@ span:nth-child(12) {
     font-weight: 900;
   }
 }
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.test {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  color: #e36e14;
+}
+.testimonials .element {
+  font-size: 16px;
+  line-height: 1.5;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+
+  color: white;
+  max-width: 600px;
+  width: 380px;
+  height: 313px;
+  margin: 40px auto;
+  box-shadow: 1px 1px 20px 15px rgb(0 0 0 / 44%);
+}
+
+.name {
+  color: transparent;
+  background: linear-gradient(to right, #0676ff, #f1d905, #0743ff);
+  -webkit-background-clip: text;
+  font-family: auto;
+  font-weight: 900;
+  font-size: 19px;
+}
+.testimonials .element p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: transparent;
+  background: linear-gradient(45deg, #e300ff, #07e1ff, #ffe500);
+  -webkit-background-clip: text;
+}
+.testimonials .element p.name {
+  color: transparent;
+  background: linear-gradient(to right, #0676ff, #f1d905, #0743ff);
+  -webkit-background-clip: text;
+  font-family: auto;
+  font-weight: 900;
+  font-size: 19px;
+}
+.testimonials .element p strong {
+  font-weight: 600;
+}
+@media (max-width: 800px) {
+  .testimonials .element {
+    max-height: max-content;
+    width: 305px;
+    height: auto;
+  }
+}

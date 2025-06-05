@@ -244,7 +244,9 @@ footer p {
 .card:hover {
   transform: scale(1.1); /* Scale up smoothly */
 }
-
+.link h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
 @media (max-width: 500px) {
   body {
     background-size: 80%;

@@ -56,7 +56,7 @@ span:nth-child(12) {
 .heading {
   color: transparent;
   /* background: linear-gradient(to right, #ff499e, #d264b6, #a480cf, #779be7); */
-  background: linear-gradient(to right, #e6c229, #f17105, #d11149, #0112ff);
+  background: linear-gradient(to right, #e6d329, #0560f1, #9d0bff, #ddff01);
   -webkit-background-clip: text;
 }
 

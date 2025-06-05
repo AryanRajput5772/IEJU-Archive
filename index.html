@@ -66,19 +66,43 @@
       width: 400px;
       height: 300px;
     }
-    .card1 {
-      margin-left: 165px;
+    .card-wraper {
+      text-align: center;
+      height: 270px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+    }
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
     }
     @media (max-width: 800px) {
-      .cards {
-        scale: 0.9;
+      .card-wraper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
       }
-      .card1 {
-        margin-left: 0px;
+      .card {
+        position: relative;
+        width: 270px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
       }
-      .card3 {
-        margin-left: 12px;
-      }
+
       .navbar a {
         font-family: "Miltonian", serif;
         font-style: normal;
@@ -148,31 +172,42 @@
       </header>
 
       <div class="cards">
-        <div class="card1 card">
-          <a href="./pages/cseBranch.html" class="link">
-            <img src="./assets/images/cse.png" class="p" draggable="false" />
-            <h3>CSE</h3>
-          </a>
-        </div>
-        <div class="card">
-          <a href="./pages/eeBranch.html" class="link">
-            <img
-              src="./assets/images/ece.png"
-              class="p"
-              id="ece"
-              draggable="false" />
-            <h3>Electronics</h3>
-          </a>
-        </div>
-        <div class="card card3">
-          <a href="./pages/ceBranch.html" class="link">
-            <img
-              src="./assets/images/ce.png"
-              class="p"
-              id="ce"
-              draggable="false" />
-            <h3>Chemical</h3>
-          </a>
+        <div class="card-wraper">
+          <div class="card1 card">
+            <a href="./pages/cseBranch.html" class="link">
+              <div class="cover">
+                <img
+                  src="./assets/images/cse.png"
+                  class="p"
+                  draggable="false" />
+                <h3>CSE</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="./pages/eeBranch.html" class="link">
+              <div class="cover">
+                <img
+                  src="./assets/images/ece.png"
+                  class="p"
+                  id="ece"
+                  draggable="false" />
+                <h3>Electronics</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card card3">
+            <a href="./pages/ceBranch.html" class="link">
+              <div class="cover">
+                <img
+                  src="./assets/images/ce.png"
+                  class="p"
+                  id="ce"
+                  draggable="false" />
+                <h3>Chemical</h3>
+              </div>
+            </a>
+          </div>
         </div>
         <br />
       </div>

@@ -322,3 +322,11 @@ body::-webkit-scrollbar-thumb {
   background: linear-gradient(red, blue, green);
   border-radius: 20px;
 }
+
+#fade {
+  color: #00000063;
+}
+
+.notes {
+  margin-top: 45px;
+}

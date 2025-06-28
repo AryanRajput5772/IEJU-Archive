@@ -143,6 +143,7 @@ p span:nth-child(9) {
   color: transparent;
   background: linear-gradient(to right, #f87503, #0386f8, #f8ba03, #f003f8);
   -webkit-background-clip: text;
+  padding-left: 4px;
 }
 
 .brand {
@@ -170,7 +171,7 @@ p span:nth-child(9) {
     font-size: 57px;
     margin-top: 100px;
     margin-bottom: 10px;
-    font-family: "Moon Dance", cursive;
+    font-family: "Satisfy", cursive;
   }
   .para {
     margin-top: 50px;
@@ -227,11 +228,12 @@ p span:nth-child(9) {
     font-style: normal;
   }
   h1 {
-    margin-left: 30px;
+    margin-left: 41px;
     font-size: 40px;
-    font-weight: 800;
-    font-family: "Moon Dance", cursive;
-    margin-top: 100px;
+    font-weight: 900;
+    font-family: "Almendra Display", serif;
+    margin-top: 125px;
+    font-style: normal;
     margin-bottom: 10px;
   }
   .para {

@@ -15,6 +15,9 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap"
       rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&family=Source+Code+Pro&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/nav.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
     <style>
@@ -113,6 +116,7 @@
       gtag("config", "G-LHSV0PDQY3");
     </script>
   </head>
+
   <body>
     <header class="Header">
       <a
@@ -254,5 +258,37 @@
         </div>
       </div>
     </div>
+    <!-- Testimonial Popup -->
+    <div id="testimonialPopup" class="popup-overlay">
+      <div class="popup-content">
+        <h2>Enjoying IEJU Archive?</h2>
+        <p>
+          If you found this website helpful, please consider giving us a short
+          testimonial!
+        </p>
+        <div class="popup-buttons">
+          <button onclick="redirectToForm()">Give Now</button>
+          <button onclick="closePopup()">Maybe Later</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Show the popup after 10 seconds
+      window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("testimonialPopup").style.display = "flex";
+        }, 3000); // 10000 ms = 10 seconds
+      };
+
+      // Close popup
+      function closePopup() {
+        document.getElementById("testimonialPopup").style.display = "none";
+      }
+
+      // Redirect to contact form
+      function redirectToForm() {
+        window.location.href = "../contact.html"; // change this path to your actual contact form URL
+      }
+    </script>
   </body>
 </html>

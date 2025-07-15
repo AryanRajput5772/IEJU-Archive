@@ -330,3 +330,61 @@ body::-webkit-scrollbar-thumb {
 .notes {
   margin-top: 45px;
 }
+
+/* popup for testimonial */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+.popup-content p {
+  font-size: 20px;
+  font-family: "Namdhinggo", serif;
+}
+.popup-content h2 {
+  font-size: 30px;
+  font-family: "Namdhinggo", serif;
+}
+.popup-content {
+  padding: 27px;
+  border-radius: 30px;
+  width: 90%;
+  max-width: 405px;
+  text-align: center;
+
+  color: #000000;
+
+  background: linear-gradient(91deg, #00c5fff5, #fd668d);
+  box-shadow: inset 0px 0px 9px 12px rgb(0 0 0 / 83%);
+}
+
+.popup-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 29px;
+  cursor: pointer;
+  box-shadow: inset 0px 0px 5px 4px rgb(0 0 0);
+}
+
+.popup-buttons button:first-child {
+  background: linear-gradient(91deg, #00c5fff5, #fd668d);
+  color: rgb(0, 0, 0);
+  font-family: "Namdhinggo", serif;
+  padding: 10px 24px;
+  font-size: 18px;
+}
+
+.popup-buttons button:last-child {
+  background: linear-gradient(91deg, #ff9a51, #2dcffff5);
+  font-family: "Namdhinggo", serif;
+  padding: 10px 24px;
+  font-size: 18px;
+}

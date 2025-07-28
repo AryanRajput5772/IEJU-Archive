@@ -237,6 +237,16 @@
         </div>
       </div>
     </div>
+    <div id="Notice">
+      <h3>📢 Notice</h3>
+      <p>
+        If any book PDF does not open directly, please try
+        <strong>downloading it first</strong>. Some Book PDFs are
+        <strong>too large</strong> to preview online and may only open properly
+        after download. <br />
+        Thanks for your understanding!
+      </p>
+    </div>
     <!-- Testimonial Popup -->
     <div id="testimonialPopup" class="popup-overlay">
       <div class="popup-content">
@@ -254,6 +264,18 @@
     <script>
       // Show the popup after 10 seconds
       window.onload = function () {
+        setTimeout(() => {
+          document.getElementById("Notice").style.display = "inline";
+        }, 500); // 10000 ms = 10 seconds
+        setTimeout(() => {
+          const notice = document.getElementById("Notice");
+          if (notice) {
+            notice.style.opacity = "0"; // fade out
+            setTimeout(() => {
+              notice.style.display = "none"; // remove from layout after fade
+            }, 500); // wait for fade transition to complete (500ms)
+          }
+        }, 10000);
         setTimeout(() => {
           document.getElementById("testimonialPopup").style.display = "flex";
         }, 3000); // 10000 ms = 10 seconds

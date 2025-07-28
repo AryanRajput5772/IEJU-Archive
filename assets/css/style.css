@@ -388,3 +388,38 @@ body::-webkit-scrollbar-thumb {
   padding: 10px 24px;
   font-size: 18px;
 }
+
+#Notice {
+  background: linear-gradient(91deg, #f9d85bf5, #6c66fd);
+  align-self: center;
+  padding: 15px 20px;
+  margin: 25px 15px;
+  max-width: 1500px;
+  font-family: "Namdhinggo", serif;
+  border-radius: 30px;
+  box-shadow: -2px 10px 20px 9px rgb(0 0 0 / 89%);
+  display: none;
+}
+
+#Notice h3 {
+  margin-top: 0;
+  color: #a004bf;
+  font-size: 30px;
+}
+#Notice {
+  transition: opacity 0.5s ease;
+  opacity: 1;
+}
+#Notice p {
+  margin: 8px 0 0;
+  color: #000000;
+  font-size: 20px;
+}
+
+@media (max-width: 600px) {
+  #Notice {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 12px 15px;
+  }
+}

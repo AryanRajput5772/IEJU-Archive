@@ -318,11 +318,6 @@ body::-webkit-scrollbar {
   background-color: #620c79;
 }
 
-body::-webkit-scrollbar-thumb {
-  background: linear-gradient(red, blue, green);
-  border-radius: 20px;
-}
-
 #fade {
   color: #0000002c;
 }

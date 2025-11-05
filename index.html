@@ -93,7 +93,23 @@
       display: flex;
       flex-direction: column;
     }
+    .lkdn {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      right: 15px;
+      top: 100px;
+      z-index: 10;
+    }
     @media (max-width: 800px) {
+      .lkdn {
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        right: 6px;
+        top: 96px;
+        z-index: 86;
+      }
       .card-wraper {
         flex-direction: column;
         align-items: center;
@@ -161,6 +177,13 @@
           <a href="contact.html" style="--i: 2">Contact Us</a>
         </nav>
       </header>
+      <a href="https://www.linkedin.com/in/-aryan-rajput"
+        ><img
+          src="./assets/images/linkedin.png"
+          alt="linkedin"
+          class="lkdn"
+          draggable="false"
+      /></a>
 
       <header class="Welcome">
         <h2>

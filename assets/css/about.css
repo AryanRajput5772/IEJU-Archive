@@ -15,15 +15,15 @@ section {
 }
 
 .photo {
-  height: 250px;
+  height: 320px;
   width: 250px;
   overflow: hidden;
   border-radius: 50%;
   background-size: cover;
   position: absolute; /* Absolute positioning to move it outside the section */
-  top: -100px; /* Move half the height (125px) outside the section */
+  top: -150px; /* Move half the height (125px) outside the section */
   left: 0px; /* Optional: Adjust horizontal positioning */
-  border: 20px solid #6a2a8a;
+  border: 13px solid #6a2a8a;
 
   z-index: 1;
 }
@@ -183,12 +183,12 @@ p span:nth-child(9) {
     margin-left: 30px;
   }
   .photo {
-    height: 170px;
+    height: 200px;
     width: 170px;
     left: 166px;
-    top: -80px;
+    top: -123px;
     position: absolute;
-    border: 20px solid #6a2a8a;
+    border: 10px solid #6a2a8a;
   }
 
   .study {
@@ -249,12 +249,12 @@ p span:nth-child(9) {
     display: inline;
   }
   .photo {
-    height: 170px;
+    height: 200px;
     width: 170px;
     left: 95px;
-    top: -80px;
+    top: -92px;
     position: absolute;
-    border: 20px solid #6a2a8a;
+    border: 10px solid #6a2a8a;
     box-shadow: 0px -14px 20px 0px rgba(0, 0, 0, 0.2);
   }
 

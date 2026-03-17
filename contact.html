@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -22,6 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Birthstone&family=Charm:wght@400;700&family=Explora&family=Italianno&family=Lobster&family=Miltonian&family=Moon+Dance&family=Petit+Formal+Script&family=Playwrite+HR+Lijeva&family=Style+Script&family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="css/theme.css" id="theme-style" />
+
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -90,7 +92,7 @@
       margin-bottom: 20px; /* or whatever spacing you prefer */
     }
   </style>
-  <body oncontextmenu="return false">
+  <body oncontextmenu="return false;">
     <header class="Header">
       <a
         class="navbar-brand"
@@ -102,7 +104,12 @@
       <label for="check" class="menu-btn">
         <span class="menu-icon"></span>
       </label>
-
+      <div class="toggle-btn">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
       <nav class="navbar">
         <a href="sylbs.html" style="--i: 0">Syllabus</a>
         <a href="about.html" style="--i: 1">About</a>
@@ -134,5 +141,7 @@
         <button type="submit" class="btn">Send Message</button>
       </form>
     </section>
+    <script src="./assets/js/theme2.js"></script>
+    <script src="./assets/js/theme.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -30,6 +30,7 @@
       href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Bitcount+Grid+Double:wght@100..900&family=Cookie&family=Emilys+Candy&family=Macondo+Swash+Caps&family=MedievalSharp&family=Mystery+Quest&family=Satisfy&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="css/theme.css" id="theme-style" />
 
     <script>
       window.onload = function () {
@@ -101,6 +102,13 @@
       top: 100px;
       z-index: 10;
     }
+    /* .toggle-btn {
+      height: 100%;
+      display: flex;
+      position: absolute;
+      right: 399px;
+      align-items: center;
+    } */
     @media (max-width: 800px) {
       .lkdn {
         height: 20px;
@@ -131,14 +139,15 @@
       }
       .Welcome span {
         font-family: "Macondo Swash Caps", cursive;
-
+        height: auto;
         font-weight: 500;
         font-style: normal;
         font-size: 30px;
       }
-      span:not(.menu-icon) {
+
+      /* span:not(.menu-icon) {
         color: transparent;
-        /* background: linear-gradient(to right, #ff499e, #d264b6, #a480cf, #779be7); */
+
         background: linear-gradient(
           to right,
           #0020ff,
@@ -147,11 +156,15 @@
           #01f9ff
         );
         -webkit-background-clip: text;
-      }
+      } */
+      /* .toggle-btn {
+        right: 74px;
+        scale: 0.7;
+      } */
     }
   </style>
   <!--Another loader ->  https://i.gifer.com/embedded/download/9hHa.gif-->
-  <body oncontextmenu="return false">
+  <body oncontextmenu="return false;">
     <div class="loader">
       <img
         src=" https://i.pinimg.com/originals/dc/cc/84/dccc846959dffafa30a836dfacf9bab9.gif "
@@ -169,6 +182,12 @@
         <label for="check" class="menu-btn">
           <span class="menu-icon"></span>
         </label>
+        <div class="toggle-btn">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle-label">
+            <span class="toggle-ball"></span>
+          </label>
+        </div>
 
         <nav class="navbar">
           <a href="sylbs.html" style="--i: 0">Syllabus</a>
@@ -386,5 +405,7 @@
         });
       });
     </script>
+    <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/theme2.js"></script>
   </body>
 </html>

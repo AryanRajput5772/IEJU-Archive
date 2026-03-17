@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -33,6 +33,7 @@
       rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="css/theme.css" id="theme-style" />
 
     <!-- Google tag (gtag.js) -->
     <script
@@ -49,7 +50,7 @@
     </script>
   </head>
 
-  <body oncontextmenu="return false">
+  <body oncontextmenu="return false;">
     <header class="Header">
       <a
         class="navbar-brand"
@@ -61,7 +62,12 @@
       <label for="check" class="menu-btn">
         <span class="menu-icon"></span>
       </label>
-
+      <div class="toggle-btn">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
       <nav class="navbar">
         <a href="sylbs.html" style="--i: 0">Syllabus</a>
         <a href="about.html" style="--i: 1">About</a>
@@ -130,5 +136,7 @@
         class="study"
         draggable="false" />
     </section>
+    <script src="./assets/js/theme2.js"></script>
+    <script src="./assets/js/theme.js"></script>
   </body>
 </html>

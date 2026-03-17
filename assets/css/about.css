@@ -251,7 +251,7 @@ p span:nth-child(9) {
   .photo {
     height: 200px;
     width: 170px;
-    left: 95px;
+    left: 103px;
     top: -92px;
     position: absolute;
     border: 10px solid #6a2a8a;
@@ -287,47 +287,58 @@ p span:nth-child(9) {
 
 @keyframes shadowAnimation {
   0% {
-    box-shadow: 0px 0px 10px 1px #0aff1e,
+    box-shadow:
+      0px 0px 10px 1px #0aff1e,
       /* Hot pink */ 0px 0px 20px 2px rgb(0, 191, 255); /* Deep sky blue */
   }
   10% {
-    box-shadow: 0px 0px 10px 1px rgb(255, 94, 0),
+    box-shadow:
+      0px 0px 10px 1px rgb(255, 94, 0),
       /* Orange red */ 0px 0px 20px 2px rgb(0, 255, 255); /* Aqua */
   }
   20% {
-    box-shadow: 0px 0px 10px1px rgb(255, 221, 0),
+    box-shadow:
+      0px 0px 10px1px rgb(255, 221, 0),
       /* Bright yellow */ 0px 0px 20px 2px rgb(128, 0, 255); /* Purple */
   }
   30% {
-    box-shadow: 0px 0px 10px 1px rgb(173, 255, 47),
+    box-shadow:
+      0px 0px 10px 1px rgb(173, 255, 47),
       /* Lime green */ 0px 0px 20px 2px rgb(255, 0, 153); /* Fuchsia pink */
   }
   40% {
-    box-shadow: 0px 0px 10px 1px rgb(0, 255, 128),
+    box-shadow:
+      0px 0px 10px 1px rgb(0, 255, 128),
       /* Mint green */ 0px 0px 20px 2px rgb(255, 99, 71); /* Tomato */
   }
   50% {
-    box-shadow: 0px 0px 10px 1px rgb(0, 255, 47),
+    box-shadow:
+      0px 0px 10px 1px rgb(0, 255, 47),
       /* Cyan */ 0px 0px 20px 2px rgb(255, 105, 180); /* Hot pink */
   }
   60% {
-    box-shadow: 0px 0px 10px 1px rgb(30, 144, 255),
+    box-shadow:
+      0px 0px 10px 1px rgb(30, 144, 255),
       /* Dodger blue */ 0px 0px 20px 2px rgb(255, 255, 0); /* Yellow */
   }
   70% {
-    box-shadow: 0px 0px 10px 1px rgb(138, 43, 226),
+    box-shadow:
+      0px 0px 10px 1px rgb(138, 43, 226),
       /* Blue violet */ 0px 0px 20px 2px rgb(0, 255, 102); /* Neon green */
   }
   80% {
-    box-shadow: 0px 0px 10px 1px rgb(0, 0, 255),
+    box-shadow:
+      0px 0px 10px 1px rgb(0, 0, 255),
       /* Blue */ 0px 0px 20px 2px rgb(255, 20, 147); /* Deep pink */
   }
   90% {
-    box-shadow: 0px 0px 10px 1px rgb(255, 0, 255),
+    box-shadow:
+      0px 0px 10px 1px rgb(255, 0, 255),
       /* Magenta */ 0px 0px 20px 2px rgb(0, 255, 255); /* Cyan */
   }
   100% {
-    box-shadow: 0px 0px 10px 1px rgb(255, 0, 85),
+    box-shadow:
+      0px 0px 10px 1px rgb(255, 0, 85),
       /* Hot pink */ 0px 0px 20px 2px rgb(0, 191, 255); /* Deep sky blue */
   }
 }

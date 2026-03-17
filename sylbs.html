@@ -1,10 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>IEJU Archive</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -23,118 +22,9 @@
       href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Birthstone&family=Charm:wght@400;700&family=Explora&family=Italianno&family=Lobster&family=Miltonian&family=Moon+Dance&family=Petit+Formal+Script&family=Playwrite+HR+Lijeva&family=Style+Script&family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
-    <style>
-      table,
-      th,
-      tr,
-      td {
-        border: 2px solid rgb(0, 0, 0); /* Greenish border */
-        border-collapse: unset;
-        color: #df6d2f;
-        font-size: 29px;
-        font-family: "Moon Dance", cursive;
-        border-radius: 25px;
-      }
-      .span {
-        display: block;
-      }
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="css/theme.css" id="theme-style" />
 
-      th,
-      td {
-        padding: 30px;
-        text-align: center;
-      }
-      table th,
-      table th sup {
-        font-weight: 800;
-        font-size: 40px;
-      }
-      @media (max-width: 720px) {
-        #papers {
-          width: 527px;
-        }
-
-        .navbar a {
-          font-family: "Miltonian", serif;
-          font-style: normal;
-        }
-
-        table,
-        th,
-        tr,
-        td {
-          font-family: "Moon Dance", cursive;
-          font-weight: 400;
-          font-style: normal;
-        }
-        #papers {
-          align-items: normal;
-        }
-
-        span {
-          height: 20px;
-        }
-
-        table,
-        th,
-        tr,
-        td {
-          /* font-size: 23px; */
-          padding: 2px;
-        }
-        table td {
-          padding-left: 10px;
-          padding-right: 10px;
-        }
-        table a {
-          margin-bottom: 50px;
-        }
-      }
-
-      table a,
-      table a sup,
-      table th,
-      table th sup {
-        text-decoration: none;
-        color: black;
-        font-weight: 600;
-      }
-
-      table a:hover {
-        color: transparent;
-        background: linear-gradient(to right, #4ddb05, #00aeff);
-        -webkit-background-clip: text;
-      }
-
-      table a:hover sup {
-        color: inherit;
-        background: inherit;
-        -webkit-background-clip: inherit;
-      }
-
-      @media (max-width: 400px) {
-        td {
-          font-size: 20px;
-          padding: 2px;
-        }
-        table th,
-        table th sup {
-          font-weight: 800;
-          font-size: 25px;
-        }
-        #papers {
-          width: 404px;
-          scale: 0.95;
-          margin-left: -4px;
-        }
-      }
-
-      hr {
-        height: 2px;
-        background-color: black;
-        opacity: 1;
-      }
-    </style>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -149,7 +39,7 @@
       gtag("config", "G-LHSV0PDQY3");
     </script>
   </head>
-  <body oncontextmenu="return false">
+  <body oncontextmenu="return false;">
     <header class="Header">
       <a class="navbar-brand" href="index.html"
         ><img src="./assets/images/logo.png" alt="logo" class="logo"
@@ -158,7 +48,12 @@
       <label for="check" class="menu-btn">
         <span class="menu-icon"></span>
       </label>
-
+      <div class="toggle-btn">
+        <input type="checkbox" id="checkbox" />
+        <label for="checkbox" class="toggle-label">
+          <span class="toggle-ball"></span>
+        </label>
+      </div>
       <nav class="navbar">
         <a href="sylbs.html" style="--i: 0">Syllabus</a>
         <a href="about.html" style="--i: 1">About</a>
@@ -327,5 +222,7 @@
         </tr>
       </table>
     </section>
+    <script src="./assets/js/theme2.js"></script>
+    <script src="./assets/js/theme.js"></script>
   </body>
 </html>

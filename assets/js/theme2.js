@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", function () {
   let savedTheme = localStorage.getItem("theme");
 
   if (savedTheme === "dark") {
-    theme.href = "../assets/css/theme.css";
+    theme.href = "/assets/css/theme.css";
     if (toggle_btn) toggle_btn.checked = true;
   }
 });

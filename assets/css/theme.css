@@ -71,3 +71,52 @@ table th sup {
 .testimonials .element P {
   color: #c5c3c3;
 }
+
+section {
+  box-shadow: -1px -1px 20px 12px rgb(255 242 242 / 61%);
+}
+
+#contact p {
+  color: transparent;
+  background: linear-gradient(to right, #ffffffab);
+  -webkit-background-clip: text;
+}
+
+#contact h3 {
+  color: transparent;
+  background: linear-gradient(to right, #ffffffab);
+  -webkit-background-clip: text;
+}
+
+#contact label {
+  background: linear-gradient(to right, #ffffffab);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+#contact textarea {
+  background-color: #ffffff03;
+  color: white;
+}
+
+form textarea,
+input {
+  background-color: #ffffff03;
+  color: white;
+  font-family: monospace;
+
+  border: 1px Solid #ffffff;
+  border-radius: 5px;
+}
+
+#contact {
+  box-shadow: -1px -1px 20px 12px rgb(255 242 242 / 61%) !important;
+}
+
+#contact .btn {
+  background: linear-gradient(to right, #ffffff, #ffffff, #ffffff);
+  color: black;
+}
+#contact .btn:hover {
+  color: #f17105;
+}

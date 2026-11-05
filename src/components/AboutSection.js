@@ -49,7 +49,7 @@ export function renderAboutSection() {
             <p>
               <strong class="font-semibold" style="color: var(--app-text)">IEJU Archive</strong> was proudly created by 
               <strong class="font-semibold" style="color: var(--primary-accent)">Aryan Rajput</strong> in 
-              <strong class="font-semibold" style="color: var(--app-text)">2025</strong>. It was born out of a simple observation: engineering students spent hours scouring disparate message boards and fragmented chats just to find past semester exam papers and official syllabi.
+              <strong class="font-semibold" style="color: var(--app-text)">2025</strong>. It was born out of a simple observation: engineering students spent hours scouring disparate message boards and fragmented chats just to find past semester exam papers and official syllabus.
             </p>
 
             <p>

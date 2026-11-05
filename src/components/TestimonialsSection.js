@@ -1,14 +1,14 @@
-import { TESTIMONIALS } from '../data/archiveData.js';
-import { getIconSvg } from '../utils/icons.js';
+import { TESTIMONIALS } from "../data/archiveData.js";
+import { getIconSvg } from "../utils/icons.js";
 
 let isModalOpen = false;
 let submitted = false;
 let testimonialsList = [...TESTIMONIALS];
 
 export function renderTestimonialsSection() {
-  const section = document.createElement('section');
-  section.id = 'testimonials';
-  section.className = 'py-16 lg:py-24 relative overflow-hidden';
+  const section = document.createElement("section");
+  section.id = "testimonials";
+  section.className = "py-16 lg:py-24 relative overflow-hidden";
 
   section.innerHTML = `
     <!-- Background radial glow -->
@@ -49,20 +49,22 @@ export function renderTestimonialsSection() {
           class="px-5 py-2.5 rounded-xl glass-panel text-xs font-semibold flex items-center gap-2 shadow-sm transition-all shrink-0 hover:scale-[1.02] active:scale-95 cursor-pointer"
           style="border-color: var(--panel-border); color: var(--app-text)"
         >
-          ${getIconSvg('messageSquare', 'w-4 h-4', 'color: var(--primary-accent)')}
+          ${getIconSvg("messageSquare", "w-4 h-4", "color: var(--primary-accent)")}
           <span>Share Your Review</span>
         </button>
       </div>
 
       <!-- Testimonials Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        ${testimonialsList.map((t) => `
+        ${testimonialsList
+          .map(
+            (t) => `
           <div
             class="p-6 rounded-2xl glass-panel-interactive flex flex-col justify-between space-y-4 group"
             style="border-color: var(--panel-border)"
           >
             <div class="space-y-3">
-              ${getIconSvg('quote', 'w-6 h-6 transition-colors opacity-80', 'color: var(--primary-accent)')}
+              ${getIconSvg("quote", "w-6 h-6 transition-colors opacity-80", "color: var(--primary-accent)")}
               <p class="text-xs sm:text-sm leading-relaxed italic" style="color: var(--app-text-muted)">
                 "${t.quote}"
               </p>
@@ -77,7 +79,7 @@ export function renderTestimonialsSection() {
                   ${t.name}
                 </div>
                 <div class="text-[11px]" style="color: var(--app-text-muted)">
-                  ${t.role || 'BE Engineering Student'}
+                  ${t.role || "BE Engineering Student"}
                 </div>
               </div>
 
@@ -86,11 +88,13 @@ export function renderTestimonialsSection() {
                   ? `<span class="text-[10px] font-mono opacity-60" style="color: var(--app-text-muted)">
                       ${t.date}
                      </span>`
-                  : ''
+                  : ""
               }
             </div>
           </div>
-        `).join('')}
+        `,
+          )
+          .join("")}
       </div>
 
     </div>
@@ -122,7 +126,7 @@ export function renderTestimonialsSection() {
             submitted
               ? `
             <div class="py-8 text-center space-y-2" style="color: var(--primary-accent)">
-              ${getIconSvg('check', 'w-10 h-10 mx-auto')}
+              ${getIconSvg("check", "w-10 h-10 mx-auto")}
               <h4 class="text-base font-semibold" style="color: var(--app-text)">Thank you for your feedback!</h4>
               <p class="text-xs" style="color: var(--app-text-muted)">Your testimonial has been added to the archive wall.</p>
               <button
@@ -216,7 +220,7 @@ export function renderTestimonialsSection() {
                     color: var(--btn-text);
                   "
                 >
-                  ${getIconSvg('send', 'w-3.5 h-3.5')}
+                  ${getIconSvg("send", "w-3.5 h-3.5")}
                   Submit Review
                 </button>
               </div>
@@ -226,56 +230,142 @@ export function renderTestimonialsSection() {
         </div>
       </div>
     `
-        : ''
+        : ""
     }
   `;
 
   // Attach event handlers
-  section.querySelector('#open-testimonial-modal-btn')?.addEventListener('click', () => {
-    isModalOpen = true;
-    submitted = false;
-    const updated = renderTestimonialsSection();
-    section.replaceWith(updated);
-  });
-
-  section.querySelector('#close-testimonial-modal-btn')?.addEventListener('click', () => {
-    isModalOpen = false;
-    const updated = renderTestimonialsSection();
-    section.replaceWith(updated);
-  });
-
-  section.querySelector('#cancel-testimonial-btn')?.addEventListener('click', () => {
-    isModalOpen = false;
-    const updated = renderTestimonialsSection();
-    section.replaceWith(updated);
-  });
-
-  section.querySelector('#done-testimonial-btn')?.addEventListener('click', () => {
-    isModalOpen = false;
-    const updated = renderTestimonialsSection();
-    section.replaceWith(updated);
-  });
-
-  section.querySelector('#testimonial-form')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = section.querySelector('#testimonial-name')?.value || 'Anonymous Student';
-    const branch = section.querySelector('#testimonial-branch')?.value || 'CSE';
-    const sem = section.querySelector('#testimonial-semester')?.value || 'Engineering Student';
-    const quote = section.querySelector('#testimonial-quote')?.value || '';
-
-    if (quote.trim()) {
-      testimonialsList.unshift({
-        id: `custom-${Date.now()}`,
-        name,
-        quote,
-        role: `${branch} · ${sem}`,
-        date: 'Just Now',
-      });
-      submitted = true;
+  section
+    .querySelector("#open-testimonial-modal-btn")
+    ?.addEventListener("click", () => {
+      isModalOpen = true;
+      submitted = false;
       const updated = renderTestimonialsSection();
       section.replaceWith(updated);
-    }
-  });
+    });
+
+  section
+    .querySelector("#close-testimonial-modal-btn")
+    ?.addEventListener("click", () => {
+      isModalOpen = false;
+      const updated = renderTestimonialsSection();
+      section.replaceWith(updated);
+    });
+
+  section
+    .querySelector("#cancel-testimonial-btn")
+    ?.addEventListener("click", () => {
+      isModalOpen = false;
+      const updated = renderTestimonialsSection();
+      section.replaceWith(updated);
+    });
+
+  section
+    .querySelector("#done-testimonial-btn")
+    ?.addEventListener("click", () => {
+      isModalOpen = false;
+      const updated = renderTestimonialsSection();
+      section.replaceWith(updated);
+    });
+
+  // section.querySelector('#testimonial-form')?.addEventListener('submit', (e) => {
+  //   e.preventDefault();
+  //   const name = section.querySelector('#testimonial-name')?.value || 'Anonymous Student';
+  //   const branch = section.querySelector('#testimonial-branch')?.value || 'CSE';
+  //   const sem = section.querySelector('#testimonial-semester')?.value || 'Engineering Student';
+  //   const quote = section.querySelector('#testimonial-quote')?.value || '';
+
+  //   if (quote.trim()) {
+  //     testimonialsList.unshift({
+  //       id: `custom-${Date.now()}`,
+  //       name,
+  //       quote,
+  //       role: `${branch} · ${sem}`,
+  //       date: 'Just Now',
+  //     });
+  //     submitted = true;
+  //     const updated = renderTestimonialsSection();
+  //     section.replaceWith(updated);
+  //   }
+  // });
+
+  section
+    .querySelector("#testimonial-form")
+    ?.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const form = e.currentTarget;
+
+      const name =
+        section.querySelector("#testimonial-name")?.value.trim() ||
+        "Anonymous Student";
+      const branch =
+        section.querySelector("#testimonial-branch")?.value.trim() ||
+        "Not specified";
+      const sem =
+        section.querySelector("#testimonial-semester")?.value.trim() ||
+        "Not specified";
+      const quote =
+        section.querySelector("#testimonial-quote")?.value.trim() || "";
+
+      if (!quote) return;
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalHTML = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+
+      // Prepare testimonial data for Formspree
+      const formData = new FormData();
+
+      formData.append("name", name);
+      formData.append("branch", branch);
+      formData.append("semester", sem);
+      formData.append("message", quote);
+      formData.append("_subject", `New IEJU Archive Testimonial - ${name}`);
+
+      try {
+        const response = await fetch("https://formspree.io/f/mjkvdgek", {
+          method: "POST",
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(
+            result.errors?.[0]?.message || "Failed to submit testimonial.",
+          );
+        }
+
+        // Show success message
+        submitted = true;
+
+        const updated = renderTestimonialsSection();
+        section.replaceWith(updated);
+      } catch (error) {
+        console.error("Testimonial submission error:", error);
+
+        let errorMsg = form.querySelector("#testimonial-error");
+
+        if (!errorMsg) {
+          errorMsg = document.createElement("p");
+          errorMsg.id = "testimonial-error";
+          errorMsg.className = "text-xs text-red-500 mt-2";
+          form.appendChild(errorMsg);
+        }
+
+        errorMsg.textContent =
+          error.message || "Something went wrong. Please try again.";
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHTML;
+      }
+    });
 
   return section;
 }

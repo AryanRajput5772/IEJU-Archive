@@ -1,11 +1,16 @@
-import { getIconSvg } from '../utils/icons.js';
+import { getIconSvg } from "../utils/icons.js";
+const heroImage = new URL(
+  "../assets/images/hero_ieju_archive_1793718672897.jpg",
+  import.meta.url,
+).href;
 
 export function renderHero(props = {}) {
-  const { searchQuery = '', onOpenSearch, onScrollToSection } = props;
+  const { searchQuery = "", onOpenSearch, onScrollToSection } = props;
 
-  const section = document.createElement('section');
-  section.id = 'hero';
-  section.className = 'relative pt-24 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24 overflow-hidden';
+  const section = document.createElement("section");
+  section.id = "hero";
+  section.className =
+    "relative pt-24 pb-14 sm:pt-32 sm:pb-20 lg:pt-36 lg:pb-24 overflow-hidden";
 
   section.innerHTML = `
     <!-- Background Glow Refractions -->
@@ -68,7 +73,7 @@ export function renderHero(props = {}) {
                 class="relative flex items-center glass-panel rounded-2xl p-1.5 sm:p-2 shadow-2xl backdrop-blur-2xl transition-colors"
                 style="border-color: var(--panel-border)"
               >
-                ${getIconSvg('search', 'w-4 h-4 sm:w-5 sm:h-5 ml-2.5 sm:ml-3 mr-2 shrink-0 transition-colors', 'color: var(--primary-accent)')}
+                ${getIconSvg("search", "w-4 h-4 sm:w-5 sm:h-5 ml-2.5 sm:ml-3 mr-2 shrink-0 transition-colors", "color: var(--primary-accent)")}
                 <input
                   id="hero-search-input"
                   type="text"
@@ -85,7 +90,7 @@ export function renderHero(props = {}) {
                   style="background-image: var(--btn-bg); color: var(--btn-text)"
                 >
                   <span>Browse</span>
-                  ${getIconSvg('arrowRight', 'w-3.5 h-3.5')}
+                  ${getIconSvg("arrowRight", "w-3.5 h-3.5")}
                 </button>
               </div>
             </div>
@@ -98,7 +103,7 @@ export function renderHero(props = {}) {
               class="nav-link-btn px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl glass-panel text-xs font-semibold flex items-center gap-2 backdrop-blur-md transition-all hover:scale-[1.02]"
               style="color: var(--app-text); border-color: var(--panel-border)"
             >
-              ${getIconSvg('bookOpen', 'w-4 h-4', 'color: var(--primary-accent)')}
+              ${getIconSvg("bookOpen", "w-4 h-4", "color: var(--primary-accent)")}
               <span>Question Papers & Notes</span>
             </button>
             <button
@@ -106,7 +111,7 @@ export function renderHero(props = {}) {
               class="nav-link-btn px-4 sm:px-5 py-2.5 sm:py-3 rounded-xl glass-panel-subtle text-xs font-semibold flex items-center gap-2 transition-all hover:scale-[1.02]"
               style="color: var(--app-text-muted); border-color: var(--panel-border)"
             >
-              ${getIconSvg('layers', 'w-4 h-4', 'color: var(--primary-accent)')}
+              ${getIconSvg("layers", "w-4 h-4", "color: var(--primary-accent)")}
               <span>Syllabus Matrix</span>
             </button>
           </div>
@@ -172,7 +177,7 @@ export function renderHero(props = {}) {
           >
             <div class="relative aspect-[16/10] sm:aspect-[16/9] lg:aspect-[4/3] rounded-xl overflow-hidden bg-black/60">
               <img
-                src="/src/assets/images/hero_ieju_archive_1793718672897.jpg"
+                src="${heroImage}"
                 alt="IEJU Archive Engineering Laboratory"
                 referrerpolicy="no-referrer"
                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 opacity-90"
@@ -203,9 +208,9 @@ export function renderHero(props = {}) {
             class="hidden sm:block absolute -top-4 -left-4 p-2.5 sm:p-3 rounded-xl glass-panel shadow-xl backdrop-blur-xl"
             style="border-color: var(--panel-border); color: var(--app-text)"
           >
-            <div class="flex items-center gap-2 text-xs font-medium">
-              ${getIconSvg('sparkles', 'w-4 h-4', 'color: var(--primary-accent)')}
-              <span>Instant Google Drive Sync</span>
+            <div class="flex items-center gap-2 text-xs font-medium [word-spacing:6px]">
+              ${getIconSvg("sparkles", "w-4 h-4", "color: var(--primary-accent)")}
+              <span>Digital  Learning  Ecosystem</span>
             </div>
           </div>
         </div>
@@ -215,14 +220,14 @@ export function renderHero(props = {}) {
   `;
 
   // Attach search input click to open search modal
-  section.querySelector('#hero-search-input')?.addEventListener('click', () => {
+  section.querySelector("#hero-search-input")?.addEventListener("click", () => {
     if (onOpenSearch) onOpenSearch();
   });
 
   // Attach nav buttons
-  section.querySelectorAll('.nav-link-btn, #hero-browse-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const navTarget = btn.getAttribute('data-nav');
+  section.querySelectorAll(".nav-link-btn, #hero-browse-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const navTarget = btn.getAttribute("data-nav");
       if (navTarget && onScrollToSection) {
         onScrollToSection(navTarget);
       }

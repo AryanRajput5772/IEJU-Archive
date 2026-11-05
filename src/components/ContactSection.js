@@ -1,12 +1,19 @@
-import { getIconSvg } from '../utils/icons.js';
+import { getIconSvg } from "../utils/icons.js";
 
-let formState = { name: '', semester: '', email: '', message: '', contributionType: 'general', driveLink: '' };
-let status = 'idle';
+let formState = {
+  name: "",
+  semester: "",
+  email: "",
+  message: "",
+  contributionType: "general",
+  driveLink: "",
+};
+let status = "idle";
 
 export function renderContactSection() {
-  const section = document.createElement('section');
-  section.id = 'contact';
-  section.className = 'py-16 lg:py-24 relative overflow-hidden';
+  const section = document.createElement("section");
+  section.id = "contact";
+  section.className = "py-16 lg:py-24 relative overflow-hidden";
 
   section.innerHTML = `
     <!-- Background specular glow -->
@@ -23,7 +30,7 @@ export function renderContactSection() {
           class="flex items-center justify-center gap-2 text-xs font-semibold uppercase tracking-wider transition-colors"
           style="color: var(--primary-accent)"
         >
-          ${getIconSvg('mail', 'w-3.5 h-3.5')}
+          ${getIconSvg("mail", "w-3.5 h-3.5")}
           <span>Get in Touch</span>
         </div>
         <h2 
@@ -43,7 +50,7 @@ export function renderContactSection() {
         style="border-color: var(--panel-border)"
       >
         ${
-          status === 'success'
+          status === "success"
             ? `
           <div class="py-12 text-center space-y-4 animate-fade-in">
             <div 
@@ -54,7 +61,7 @@ export function renderContactSection() {
                 color: var(--primary-accent);
               "
             >
-              ${getIconSvg('checkCircle2', 'w-8 h-8')}
+              ${getIconSvg("checkCircle2", "w-8 h-8")}
             </div>
             <h3 class="text-xl font-bold tracking-tight" style="color: var(--app-text)">
               Message Received!
@@ -76,7 +83,12 @@ export function renderContactSection() {
           </div>
         `
             : `
-          <form id="contact-form" class="space-y-6">
+          <form id="contact-form" class="space-y-6"  action="https://formspree.io/f/mjkvdgek"
+    method="POST"><input
+    type="hidden"
+    name="contributionType"
+    value="${formState.contributionType}"
+/>
             
             <!-- Category Segmented Control -->
             <div class="space-y-2">
@@ -85,28 +97,30 @@ export function renderContactSection() {
               </label>
               <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
                 ${[
-                  { id: 'general', label: 'General Inquiry' },
-                  { id: 'notes', label: 'Contribute Unit Notes' },
-                  { id: 'paper', label: 'Send Past Exam Paper' },
-                ].map((cat, idx) => {
-                  const isSelected = formState.contributionType === cat.id;
-                  return `
+                  { id: "general", label: "General Inquiry" },
+                  { id: "notes", label: "Contribute Unit Notes" },
+                  { id: "paper", label: "Send Past Exam Paper" },
+                ]
+                  .map((cat, idx) => {
+                    const isSelected = formState.contributionType === cat.id;
+                    return `
                     <button
                       type="button"
                       data-contribution-type="${cat.id}"
                       class="contribution-type-btn py-2 px-3 rounded-xl text-xs font-medium border text-center transition-all cursor-pointer ${
-                        idx === 2 ? 'col-span-2 sm:col-span-1' : ''
+                        idx === 2 ? "col-span-2 sm:col-span-1" : ""
                       }"
                       style="
-                        background-color: ${isSelected ? 'var(--panel-subtle)' : 'transparent'};
-                        border-color: ${isSelected ? 'var(--primary-accent)' : 'var(--panel-border)'};
-                        color: ${isSelected ? 'var(--app-text)' : 'var(--app-text-muted)'};
+                        background-color: ${isSelected ? "var(--panel-subtle)" : "transparent"};
+                        border-color: ${isSelected ? "var(--primary-accent)" : "var(--panel-border)"};
+                        color: ${isSelected ? "var(--app-text)" : "var(--app-text-muted)"};
                       "
                     >
                       ${cat.label}
                     </button>
                   `;
-                }).join('')}
+                  })
+                  .join("")}
               </div>
             </div>
 
@@ -119,8 +133,9 @@ export function renderContactSection() {
                 <input
                   type="text"
                   id="contact-name"
+                  name="name"
                   required
-                  value="${formState.name || ''}"
+                  value="${formState.name || ""}"
                   placeholder="e.g. Aryan Rajput"
                   class="w-full px-4 py-3 rounded-xl border text-sm focus:outline-none transition-colors"
                   style="
@@ -138,8 +153,9 @@ export function renderContactSection() {
                 <input
                   type="text"
                   id="contact-semester"
+                  name="semester"
                   required
-                  value="${formState.semester || ''}"
+                  value="${formState.semester || ""}"
                   placeholder="e.g. 4th Sem (CSE)"
                   class="w-full px-4 py-3 rounded-xl border text-sm focus:outline-none transition-colors"
                   style="
@@ -160,8 +176,9 @@ export function renderContactSection() {
                 <input
                   type="email"
                   id="contact-email"
+                  name="email"
                   required
-                  value="${formState.email || ''}"
+                  value="${formState.email || ""}"
                   placeholder="student@example.com"
                   class="w-full px-4 py-3 rounded-xl border text-sm focus:outline-none transition-colors"
                   style="
@@ -179,7 +196,9 @@ export function renderContactSection() {
                 <input
                   type="url"
                   id="contact-drive-link"
-                  value="${formState.driveLink || ''}"
+                  name="driveLink"
+                  value="${formState.driveLink || ""}"
+
                   placeholder="https://drive.google.com/..."
                   class="w-full px-4 py-3 rounded-xl border text-sm focus:outline-none transition-colors"
                   style="
@@ -198,6 +217,7 @@ export function renderContactSection() {
               </label>
               <textarea
                 id="contact-message"
+                name="message"
                 required
                 rows="4"
                 placeholder="Detail your question, feedback, or description of the study notes you are submitting..."
@@ -207,29 +227,24 @@ export function renderContactSection() {
                   border-color: var(--panel-border);
                   color: var(--app-text);
                 "
-              >${formState.message || ''}</textarea>
+              >${formState.message || ""}</textarea>
             </div>
 
             <!-- Submit Button -->
             <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
-              <span class="text-xs" style="color: var(--app-text-muted)">
-                Or email directly at 
-                <a href="mailto:iejuarchive@gmail.com" class="font-semibold underline" style="color: var(--primary-accent)">
-                  iejuarchive@gmail.com
-                </a>
-              </span>
+            
 
               <button
                 type="submit"
-                ${status === 'submitting' ? 'disabled' : ''}
+                ${status === "submitting" ? "disabled" : ""}
                 class="w-full sm:w-auto px-7 py-3 rounded-xl disabled:opacity-50 text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 shadow-lg transition-all active:scale-95 cursor-pointer"
                 style="
                   background-image: var(--btn-bg);
                   color: var(--btn-text);
                 "
               >
-                ${getIconSvg('send', 'w-4 h-4')}
-                <span>${status === 'submitting' ? 'Sending Message...' : 'Send Message'}</span>
+                ${getIconSvg("send", "w-4 h-4")}
+                <span>${status === "submitting" ? "Sending Message..." : "Send Message"}</span>
               </button>
             </div>
 
@@ -242,33 +257,94 @@ export function renderContactSection() {
   `;
 
   // Attach handlers
-  section.querySelectorAll('.contribution-type-btn').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      formState.contributionType = btn.getAttribute('data-contribution-type');
+  section.querySelectorAll(".contribution-type-btn").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      formState.contributionType = btn.getAttribute("data-contribution-type");
       const updated = renderContactSection();
       section.replaceWith(updated);
     });
   });
 
-  section.querySelector('#contact-form')?.addEventListener('submit', (e) => {
-    e.preventDefault();
-    status = 'submitting';
-    const updated = renderContactSection();
-    section.replaceWith(updated);
+  // section.querySelector("#contact-form")?.addEventListener("submit", (e) => {
+  //   e.preventDefault();
+  //   status = "submitting";
+  //   const updated = renderContactSection();
+  //   section.replaceWith(updated);
 
-    setTimeout(() => {
-      status = 'success';
-      formState = { name: '', semester: '', email: '', message: '', contributionType: 'general', driveLink: '' };
-      const successUpdated = renderContactSection();
-      updated.replaceWith(successUpdated);
-    }, 800);
-  });
+  //   setTimeout(() => {
+  //     status = "success";
+  //     formState = {
+  //       name: "",
+  //       semester: "",
+  //       email: "",
+  //       message: "",
+  //       contributionType: "general",
+  //       driveLink: "",
+  //     };
+  //     const successUpdated = renderContactSection();
+  //     updated.replaceWith(successUpdated);
+  //   }, 800);
+  // });
+  section
+    .querySelector("#contact-form")
+    ?.addEventListener("submit", async (e) => {
+      e.preventDefault();
 
-  section.querySelector('#reset-contact-form-btn')?.addEventListener('click', () => {
-    status = 'idle';
-    const updated = renderContactSection();
-    section.replaceWith(updated);
-  });
+      const form = e.currentTarget;
+      status = "submitting";
+
+      const updated = renderContactSection();
+      section.replaceWith(updated);
+
+      try {
+        const response = await fetch("https://formspree.io/f/mjkvdgek", {
+          method: "POST",
+          body: new FormData(form),
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        const result = await response.json();
+
+        if (!response.ok) {
+          throw new Error(
+            result.errors?.map((err) => err.message).join(", ") ||
+              "Form submission failed.",
+          );
+        }
+
+        status = "success";
+
+        formState = {
+          name: "",
+          semester: "",
+          email: "",
+          message: "",
+          contributionType: "general",
+          driveLink: "",
+        };
+
+        const successUpdated = renderContactSection();
+        updated.replaceWith(successUpdated);
+      } catch (error) {
+        console.error("Formspree submission error:", error);
+
+        status = "idle";
+
+        const errorUpdated = renderContactSection();
+        updated.replaceWith(errorUpdated);
+
+        alert("Unable to send your message: " + error.message);
+      }
+    });
+  section
+    .querySelector("#reset-contact-form-btn")
+    ?.addEventListener("click", () => {
+      status = "idle";
+      const updated = renderContactSection();
+      section.replaceWith(updated);
+    });
 
   return section;
 }

@@ -1,9 +1,9 @@
-import { getIconSvg } from '../utils/icons.js';
+import { getIconSvg } from "../utils/icons.js";
 
 export function renderAboutSection() {
-  const section = document.createElement('section');
-  section.id = 'about';
-  section.className = 'py-16 lg:py-24 relative';
+  const section = document.createElement("section");
+  section.id = "about";
+  section.className = "py-16 lg:py-24 relative";
 
   section.innerHTML = `
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
@@ -68,7 +68,7 @@ export function renderAboutSection() {
           >
             <div>
               <div class="text-sm font-bold" style="color: var(--app-text)">Aryan Rajput</div>
-              <div class="text-xs" style="color: var(--app-text-muted)">Founder & Core Developer · Batch of 2025</div>
+              <div class="text-xs" style="color: var(--app-text-muted)">Founder & Core Developer · Batch of 2027</div>
             </div>
 
             <div class="flex items-center gap-3">
@@ -79,7 +79,7 @@ export function renderAboutSection() {
                 class="px-4 py-2 rounded-xl glass-panel-subtle text-xs font-semibold flex items-center gap-2 transition-all hover:scale-105"
                 style="border-color: var(--panel-border); color: var(--app-text)"
               >
-                ${getIconSvg('linkedin', 'w-4 h-4', 'color: var(--primary-accent)')}
+                ${getIconSvg("linkedin", "w-4 h-4", "color: var(--primary-accent)")}
                 <span>LinkedIn Profile</span>
               </a>
               <a
@@ -89,7 +89,7 @@ export function renderAboutSection() {
                 class="px-4 py-2 rounded-xl glass-panel-subtle text-xs font-semibold flex items-center gap-2 transition-all hover:scale-105"
                 style="border-color: var(--panel-border); color: var(--app-text)"
               >
-                ${getIconSvg('github', 'w-4 h-4')}
+                ${getIconSvg("github", "w-4 h-4")}
                 <span>GitHub Profile</span>
               </a>
             </div>
@@ -110,7 +110,7 @@ export function renderAboutSection() {
                 color: var(--primary-accent);
               "
             >
-              ${getIconSvg('bookOpen', 'w-5 h-5')}
+              ${getIconSvg("bookOpen", "w-5 h-5")}
             </div>
             <h4 class="text-base font-bold tracking-tight" style="color: var(--app-text)">
               Open Academic Heritage
@@ -132,7 +132,7 @@ export function renderAboutSection() {
                 color: var(--primary-accent);
               "
             >
-              ${getIconSvg('graduationCap', 'w-5 h-5')}
+              ${getIconSvg("graduationCap", "w-5 h-5")}
             </div>
             <h4 class="text-base font-bold tracking-tight" style="color: var(--app-text)">
               Jiwaji University Focused

@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEJU Archive</title>
+    <link rel="icon" href="./assets/images/logohalf.png" type="image/png" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Agu+Display&family=Birthstone&family=Charm:wght@400;700&family=Explora&family=Italianno&family=Lobster&family=Miltonian&family=Moon+Dance&family=Petit+Formal+Script&family=Playwrite+HR+Lijeva&family=Style+Script&family=Truculenta:opsz,wght@12..72,100..900&family=Yuji+Mai&display=swap"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almendra+Display&family=Bitcount+Grid+Double:wght@100..900&family=Cookie&family=Emilys+Candy&family=Macondo+Swash+Caps&family=MedievalSharp&family=Mystery+Quest&family=Satisfy&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="css/theme.css" id="theme-style" />
+
+    <script>
+      window.onload = function () {
+        document.querySelector(".loader").style.display = "none";
+        document.querySelector(".content").style.display = "block";
+      };
+    </script>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-LHSV0PDQY3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-LHSV0PDQY3");
+    </script>
+  </head>
+  <style>
+    .content {
+      display: none;
+    }
+    .loader {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      width: 100%;
+      /* background: #000000; */
+      background: #171c1d;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+    }
+    .loader img {
+      width: 400px;
+      height: 300px;
+    }
+    .card-wraper {
+      text-align: center;
+      height: 270px;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: nowrap;
+      margin-bottom: 20px;
+    }
+    .cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+    }
+    .lkdn {
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      right: 15px;
+      top: 100px;
+      z-index: 10;
+    }
+    /* .toggle-btn {
+      height: 100%;
+      display: flex;
+      position: absolute;
+      right: 399px;
+      align-items: center;
+    } */
+    @media (max-width: 800px) {
+      .lkdn {
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        right: 10px;
+        top: 96px;
+        z-index: 86;
+      }
+      .card-wraper {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+      }
+      .card {
+        position: relative;
+        width: 270px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        font-family: "Miltonian", serif;
+        font-style: normal;
+      }
+      .Welcome span {
+        font-family: "Macondo Swash Caps", cursive;
+        height: auto;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 30px;
+      }
+
+      /* span:not(.menu-icon) {
+        color: transparent;
+
+        background: linear-gradient(
+          to right,
+          #0020ff,
+          #db8b52,
+          #a020ff,
+          #01f9ff
+        );
+        -webkit-background-clip: text;
+      } */
+      /* .toggle-btn {
+        right: 74px;
+        scale: 0.7;
+      } */
+    }
+  </style>
+  <!--Another loader ->  https://i.gifer.com/embedded/download/9hHa.gif-->
+  <body oncontextmenu="return false;">
+    <div class="loader">
+      <img
+        src=" https://i.pinimg.com/originals/dc/cc/84/dccc846959dffafa30a836dfacf9bab9.gif "
+        alt="" />
+    </div>
+    <div class="content">
+      <header class="Header">
+        <a
+          class="navbar-brand"
+          href="index.html
+        "
+          ><img src="./assets/images/logo.png" alt="logo" class="logo"
+        /></a>
+        <input type="checkbox" id="check" hidden />
+        <label for="check" class="menu-btn">
+          <span class="menu-icon"></span>
+        </label>
+        <div class="toggle-btn">
+          <input type="checkbox" id="checkbox" />
+          <label for="checkbox" class="toggle-label">
+            <span class="toggle-ball"></span>
+          </label>
+        </div>
+
+        <nav class="navbar">
+          <a href="sylbs.html" style="--i: 0">Syllabus</a>
+          <a href="about.html" style="--i: 1">About</a>
+          <!-- <a href="https://ieju-notices.vercel.app" style="--i: 2">Notices</a> -->
+          <a href="contact.html" style="--i: 2">Contact Us</a>
+        </nav>
+      </header>
+      <!-- <a href="https://www.linkedin.com/in/-aryan-rajput"
+        ><img
+          src="./assets/images/linkedin.png"
+          alt="linkedin"
+          class="lkdn"
+          draggable="false"
+      /></a> -->
+
+      <header class="Welcome">
+        <h2>
+          <span class="heading">WELCOME</span>&nbsp;
+          <span class="heading">TO</span>&nbsp;
+          <span class="heading">IEJU</span>&nbsp;
+          <span class="heading">ARCHIVE</span><br />
+          <span class="heading">Your</span>&nbsp;
+          <span class="heading">One-stop</span>&nbsp;
+          <span class="heading">Destination</span>&nbsp;
+          <span class="heading">For</span>&nbsp;
+          <span class="heading">All</span>&nbsp;
+          <span class="heading">Academic</span>&nbsp;
+          <span class="heading">Resources</span>&nbsp;
+        </h2>
+      </header>
+
+      <div class="cards">
+        <div class="card-wraper">
+          <div class="card1 card">
+            <a href="./pages/cseBranch.html" class="link">
+              <div class="cover">
+                <img
+                  src="./assets/images/cse.png"
+                  class="p"
+                  draggable="false" />
+                <h3>CSE</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a href="./pages/eeBranch.html" class="link">
+              <div class="cover">
+                <img
+                  src="./assets/images/ece.png"
+                  class="p"
+                  id="ece"
+                  draggable="false" />
+                <h3>Electronics</h3>
+              </div>
+            </a>
+          </div>
+          <div class="card card3">
+            <a href="./pages/ceBranch.html" class="link">
+              <div class="cover">
+                <img
+                  src="./assets/images/ce.png"
+                  class="p"
+                  id="ce"
+                  draggable="false" />
+                <h3>Chemical</h3>
+              </div>
+            </a>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <bn />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 class="Fq">FAQs</h1>
+    <br />
+    <div class="accordion">
+      <!-- <div class="contentbox">
+        <div class="label">What does "Notices" Section Contains ?</div>
+        <div class="Content">
+          The Notices section displays Notices directly from the Jiwaji
+          University noticeboard, filtered to show only those containing the
+          keywords “B.E.” or “Result” It automatically fetches and displays the
+          latest relevant notices for students.
+          <ul>
+            <li>
+              To search for semester wise Notices use Roman numbers like "vi"
+              for 6th sem, "iv" for 4th sem and accordingly
+            </li>
+            <li>
+              You can also search by date using the format: dd/mmm/yyyy — for
+              example, 28/Apr/2025 (use first 3 letters of month, like Apr)
+            </li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="contentbox">
+        <div class="label">What does "Syllabus" Section Contains ?</div>
+        <div class="Content">
+          The Syllabus section provides access to the Syllabus of each semester
+        </div>
+      </div>
+      <div class="contentbox">
+        <div class="label">Why are unit-wise notes not available ?</div>
+        <div class="Content">
+          Currently, unit-wise notes are not available for every subject. As
+          soon as we receive any, we will add to the IEJU archive. If anyone has
+          unit-wise notes for any subject and would like to contribute, feel
+          free to reach out to us via contact form.
+        </div>
+      </div>
+      <div class="contentbox">
+        <div class="label">How can I share my testimonial ?</div>
+        <div class="Content">
+          You can share your testimonial by reaching out to us through the
+          contact form available on the website. In the message section of the
+          contact form, send your testimonial along with your name. We'd love to
+          hear about your experience and feature your feedback in the IEJU
+          archive
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <h2 class="test">Testimonials</h2>
+
+    <div class="testimonials">
+      <div class="element">
+        <p>
+          "IEJU Archive is an excellent resource for students. It brings
+          together all the previous years' question papers, syllabus, and
+          important notices in one place. The Notices section especially keeps
+          us updated without needing to check multiple sources. It's truly a
+          one-stop solution for students. A big thank you to
+          <strong><i>Aryan Bhaiya</i></strong> for creating such a helpful
+          platform!"
+        </p>
+        <p class="name">~ <i>Manu Rajput</i></p>
+      </div>
+      <div class="element">
+        <p>
+          Amazing work, <strong><i>Aryan</i></strong
+          >! The IEJU Archive website is incredibly helpful for BE students of
+          Jiwaji University. It makes exam preparation so much easier by
+          providing quick and organized access to previous year question papers.
+          Truly a valuable resource — well done!
+        </p>
+        <p class="name">~ <i>Dhananjay Nagarch</i></p>
+      </div>
+      <div class="element">
+        <p>
+          "Big appreciation to Aryan Bhaiya for the effort and vision behind
+          this. The platform is really good, clean, and focused on what students
+          need. Thank you
+          <strong><i>Aryan Bhaiya</i></strong> for this thoughtfully designed
+          and immensely helpful platform."
+        </p>
+        <p class="name">~ <i>Ishmeet</i></p>
+      </div>
+      <div class="element">
+        <p>
+          "The layout is clean, the content is relevant, and everything is
+          accessible. The website seems super helpful and well-thought-out. It
+          saves time and effort!. Thank you
+          <strong><i>Aryan Bhaiya</i></strong> for creating IEJU Archive."
+        </p>
+        <p class="name">~ <i>Sumaira</i></p>
+      </div>
+
+      <div class="element">
+        <p>
+          "Thank you for providing this website. It’s extremely helpful and
+          neatly organized. I’m looking forward to having access to notes as
+          well in the future.Truly appreciate your efforts,
+          <strong><i>Aryan Bhaiya</i></strong
+          >"
+        </p>
+        <p class="name">~ <i>Somil Jain</i></p>
+      </div>
+
+      <div class="element">
+        <p>
+          "This platform will genuinely support all of us throughout our
+          engineering journey. The easy access to study material is a
+          game-changer. Hats off to <strong><i>Aryan Bhaiya</i></strong> for
+          creating something so impactful"
+        </p>
+        <p class="name">~ <i>Devraj Singh</i></p>
+      </div>
+      <div class="element">
+        <p>
+          "IEJU Archive is truly so helpful! It has made accessing previous year
+          question papers quick and convenient. The platform is easy to use and
+          saves a lot of time during exam preparation. I'm really thankful for
+          this initiative — it's a great help for all students at IEJU."
+        </p>
+        <p class="name">~ <i>Zaid Khan</i></p>
+      </div>
+    </div>
+
+    <script>
+      const accordion = document.querySelectorAll(".contentbox");
+      accordion.forEach((acc) => {
+        acc.addEventListener("click", function () {
+          this.classList.toggle("active");
+        });
+      });
+    </script>
+    <script src="./assets/js/theme.js"></script>
+    <!-- <script src="./assets/js/theme2.js"></script> -->
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "ieju-archive",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 3000",
+    "start": "python3 -m http.server 3000",
+    "lint": "node -c src/main.js"
+  }
+}

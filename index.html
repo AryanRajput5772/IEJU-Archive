@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="dark scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IEJU Archive - Academic Resources & Question Papers</title>
+    <meta name="description" content="The modern all-black glassmorphic academic repository for Institute of Engineering Jiwaji University students. Access previous year question papers, syllabi, unit notes, and study books." />
+    <meta property="og:title" content="IEJU Archive - Academic Resources & Question Papers" />
+    <meta property="og:description" content="The modern all-black glassmorphic academic repository for Institute of Engineering Jiwaji University students. Access previous year question papers, syllabi, unit notes, and study books." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ['Outfit', 'sans-serif'],
+              sans: ['Plus Jakarta Sans', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body class="bg-black text-neutral-100 antialiased selection:bg-cyan-500/20 selection:text-cyan-300 min-h-screen overflow-x-hidden font-sans">
+    <div id="app"></div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

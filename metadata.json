@@ -1,0 +1,6 @@
+{
+  "name": "IEJU Archive - Academic Resources & Question Papers",
+  "description": "The modern all-black glassmorphic academic repository for Institute of Engineering Jiwaji University students. Access previous year question papers, syllabi, unit notes, and study books.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

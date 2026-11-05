@@ -1,0 +1,51 @@
+export const THEMES = [
+  {
+    id: "pure-black",
+    name: "Nebula Noir",
+    tagline: "Pitch black minimalist canvas with razor chrome highlights",
+    dotColor: "#000000",
+    accentClass: "from-white to-neutral-400",
+    isDark: true,
+  },
+  {
+    id: "amethyst",
+    name: "Cosmic Amethyst",
+    tagline: "Deep space purple with glowing violet accents",
+    dotColor: "#c084fc",
+    accentClass: "from-purple-400 via-fuchsia-400 to-pink-500",
+    isDark: true,
+  },
+  {
+    id: "navy",
+    name: "Midnight Sapphire",
+    tagline: "Deep ocean sapphire with electric sky blue glow",
+    dotColor: "#38bdf8",
+    accentClass: "from-sky-400 via-blue-500 to-indigo-400",
+    isDark: true,
+  },
+  {
+    id: "emerald",
+    name: "Emerald Matrix",
+    tagline: "Cyber obsidian forest with mint green light",
+    dotColor: "#10b981",
+    accentClass: "from-emerald-400 via-teal-400 to-green-500",
+    isDark: true,
+  },
+  {
+    id: "black",
+    name: "Arctic Obsidian",
+    tagline: "Deep space black with electric cyan refractions",
+    dotColor: "#06b6d4",
+    accentClass: "from-cyan-400 via-sky-400 to-indigo-400",
+    isDark: true,
+  },
+
+  {
+    id: "light",
+    name: "Crystal Frost",
+    tagline: "Luxury frosted glass studio with crystalline frost accents",
+    dotColor: "#bae6fd",
+    accentClass: "from-sky-300 via-blue-500 to-indigo-600",
+    isDark: false,
+  },
+];

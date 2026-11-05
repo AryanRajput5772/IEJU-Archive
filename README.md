@@ -5,8 +5,6 @@
 
 ![IEJU Archive Preview](src/assets/images/hero_ieju_archive_1793718672897.jpg)
 
----
-
 ## 🌟 Overview
 
 **IEJU Archive** is a modern, lightweight, glassmorphic academic repository built specifically for students at the Institute of Engineering, Jiwaji University. It provides frictionless, democratized access to past semester examination papers, unit-wise reference notes, prescribed textbooks, and official syllabi across all eight semesters.
@@ -21,12 +19,12 @@ The application is built using **pure Vanilla HTML, CSS (Tailwind CSS), and Java
 - 📄 **Unit-Wise Notes & Question Papers**: Direct access to past semester question papers (PYQs), unit notes (Units 1–5), textbooks, and lecture playlists hosted on Google Drive.
 - 👁️ **Instant Quick Preview Modal**: Preview PDFs, textbooks, and past papers inside an embedded Google Drive viewer without leaving the site.
 - 🎨 **6 Glassmorphism Themes**: Switch dynamically between six curated visual atmospheres with persistent local storage:
-  - 🌌 **Nebula Noir** *(Pitch Black Minimalist)*
-  - 🧊 **Arctic Obsidian** *(Electric Cyan Refractions)*
-  - 💎 **Midnight Sapphire** *(Deep Ocean Sapphire)*
-  - 🌲 **Emerald Matrix** *(Cyber Obsidian Forest)*
-  - 🔮 **Cosmic Amethyst** *(Deep Space Purple)*
-  - ❄️ **Crystal Frost** *(Luxury Frosted Light Studio)*
+  - 🌌 **Nebula Noir** _(Pitch Black Minimalist)_
+  - 🧊 **Arctic Obsidian** _(Electric Cyan Refractions)_
+  - 💎 **Midnight Sapphire** _(Deep Ocean Sapphire)_
+  - 🌲 **Emerald Matrix** _(Cyber Obsidian Forest)_
+  - 🔮 **Cosmic Amethyst** _(Deep Space Purple)_
+  - ❄️ **Crystal Frost** _(Luxury Frosted Light Studio)_
 - 🔍 **Quick Search Modal (`Cmd + K` / `Ctrl + K`)**: Instant search by subject code (e.g., `101`, `BEEE`), subject name, branch, or topic.
 - 🔖 **Bookmarks Drawer**: Save frequently accessed subjects or syllabi locally in your browser for one-click access.
 - 📊 **Official Syllabus Matrix**: Interactive grid table displaying official course structures for all 8 semesters.
@@ -98,4 +96,4 @@ Created with dedication by **Aryan Rajput** (2025) for students of the Institute
 
 ---
 
-*IEJU Archive is an open academic repository dedicated to fostering student success.*
+_IEJU Archive is an open academic repository dedicated to fostering student success._

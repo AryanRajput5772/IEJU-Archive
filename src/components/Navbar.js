@@ -289,12 +289,17 @@ export function renderNavbar(props) {
   // Attach event handlers to header DOM node
   header.querySelectorAll('.nav-link-btn').forEach((btn) => {
     btn.addEventListener('click', () => {
+      const wasMobileMenuOpen = isMobileMenuOpen;
       const navTarget = btn.getAttribute('data-nav');
       if (navTarget && onScrollToSection) {
         onScrollToSection(navTarget);
       }
       isMobileMenuOpen = false;
       isThemeSwitcherOpen = false;
+      if (wasMobileMenuOpen) {
+        const updatedHeader = renderNavbar(props);
+        header.replaceWith(updatedHeader);
+      }
     });
   });
 

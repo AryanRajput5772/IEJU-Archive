@@ -1,7 +1,9 @@
 import { SYLLABUS_DATA } from "../data/archiveData.js";
 import { getIconSvg } from "../utils/icons.js";
 
-let currentSelectedBranch = "all";
+let currentSelectedBranch = window.matchMedia("(max-width: 639px)").matches
+  ? "cse"
+  : "all";
 
 export function renderSyllabusMatrix(props = {}) {
   const { onToggleBookmark, onSelectSyllabus } = props;
@@ -59,7 +61,7 @@ export function renderSyllabusMatrix(props = {}) {
 
         <!-- Quick Branch Filter -->
         <div 
-          class="flex items-center gap-1.5 p-1 rounded-xl glass-panel shrink-0"
+          class="flex items-center gap-1.5 p-1 rounded-xl glass-panel w-full sm:w-auto sm:shrink-0"
           style="border-color: var(--panel-border)"
         >
           ${["all", "cse", "ee", "ce"]
@@ -74,7 +76,7 @@ export function renderSyllabusMatrix(props = {}) {
               return `
               <button
                 data-syllabus-branch="${branchKey}"
-                class="syllabus-branch-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer"
+                class="syllabus-branch-filter-btn flex-1 sm:flex-none items-center justify-center px-3 py-1.5 text-xs font-semibold rounded-lg transition-all cursor-pointer ${branchKey === "all" ? "hidden sm:inline-flex" : "inline-flex"}"
                 style="
                   background-image: ${isSelected ? "var(--btn-bg)" : "none"};
                   color: ${isSelected ? "var(--btn-text)" : "var(--app-text-muted)"};

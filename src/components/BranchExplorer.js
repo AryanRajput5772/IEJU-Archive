@@ -1,7 +1,7 @@
 import { BRANCHES, SUBJECT_RESOURCES } from '../data/archiveData.js';
 import { getIconSvg } from '../utils/icons.js';
 
-let currentSemesterFilter = 'all';
+let currentSemesterFilter = '1';
 let showNotice = true;
 
 export function renderBranchExplorer(props = {}) {
@@ -148,17 +148,6 @@ export function renderBranchExplorer(props = {}) {
             <span class="text-[11px] sm:text-xs font-semibold mr-1.5 shrink-0 uppercase tracking-wider" style="color: var(--app-text-muted)">
               Sem:
             </span>
-            <button
-              data-sem="all"
-              class="sem-filter-btn px-3 py-1.5 text-xs font-semibold rounded-lg transition-all shrink-0 active:scale-95 cursor-pointer"
-              style="
-                background-image: ${activeSemester === 'all' ? 'var(--btn-bg)' : 'none'};
-                color: ${activeSemester === 'all' ? 'var(--btn-text)' : 'var(--app-text-muted)'};
-                background-color: ${activeSemester === 'all' ? 'transparent' : 'var(--panel-subtle)'};
-              "
-            >
-              All
-            </button>
             ${[1, 2, 3, 4, 5, 6, 7, 8].map((sem) => {
               const isActive = String(activeSemester) === String(sem);
               return `
@@ -480,7 +469,7 @@ export function renderBranchExplorer(props = {}) {
   });
 
   section.querySelector('#reset-semester-filter-btn')?.addEventListener('click', () => {
-    currentSemesterFilter = 'all';
+    currentSemesterFilter = '1';
     const updated = renderBranchExplorer(props);
     section.replaceWith(updated);
   });

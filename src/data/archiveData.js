@@ -1350,27 +1350,37 @@ export const SUBJECT_RESOURCES = [
       {
         unitNumber: 1,
         title: "Data Transmission Basics & Impairments",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/169L7cr_GzCQSaeG_rFSJr6h3CS5vfgHV?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 2,
         title: "Transmission Media: Guided & Unguided Media",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1cqQLTMUiLFLfddVjlNY6DsMgClIkMbz_?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 3,
         title: "Signal Encoding: Digital-to-Digital & Analog-to-Digital",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1V9IzEtSLC-AqLwvlVM_hgPya4YD_Z4eN?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 4,
         title: "Multiplexing Techniques (FDM, WDM, TDM)",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1PpHO812QszaL1IyeY09l8QfVL3nPcEPk?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 5,
         title: "Circuit Switching & Packet Switching Concepts",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1_vWtR8SL_llyDnhJ2S-wWzQOk2YzCynW?usp=sharing",
+        isAvailable: true,
       },
     ],
     tags: [
@@ -1459,27 +1469,37 @@ export const SUBJECT_RESOURCES = [
       {
         unitNumber: 1,
         title: "Network Topologies, Layered Architecture & Protocols",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1FpS1kQeVjU9F8fh50D0seWqWZ5zO96Ik?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 2,
         title: "Data Link Layer: Framing, Flow & Error Control",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1BgY8QwQAlArrnpsKkL6-Sj-HBm5cZL6B?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 3,
         title: "Network Layer: IPv4, Subnetting & Routing Algorithms",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1qb2gV94f1-3-ZM2PKMoPkTXbiQnbiVxN?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 4,
         title: "Transport Layer: TCP Sockets, UDP & Congestion Control",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/13qkPIrO4TNgNUyDzI291zh9DOdLHc2O2?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 5,
         title: "Application Layer: DNS, HTTP, SMTP & Security Protocols",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1ySSP7IKvGUXS8cCqlTh_WXBtj_UuslN3?usp=sharing",
+        isAvailable: true,
       },
     ],
     tags: ["Computer Network", "TCP/IP", "OSI", "Routing", "Subnetting"],
@@ -1502,27 +1522,37 @@ export const SUBJECT_RESOURCES = [
       {
         unitNumber: 1,
         title: "Display Devices, Scan Conversion & Bresenham Line Algorithms",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1YnMMlav1U9AabsOR0Y0nZMVxzNaAaeyc?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 2,
         title: "2D Transformations: Translation, Rotation & Scaling",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1bUKkUiiGADbGhd-xSIrlUwROWdlJ0Y1P?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 3,
         title: "Clipping Algorithms: Cohen-Sutherland & Sutherland-Hodgman",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1T4OpgTQ5BSEaUcoZspJL_uGaT8GSSIAT?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 4,
         title: "3D Viewing, Projections & Hidden Surface Removal",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/13ssK1Q7KjMuGbaJstnbFHYWj02lMwkyi?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 5,
         title: "Multimedia Technology, Audio/Video Formats & Compression",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1oBhWDcty67_emOLRTTX7Cb5PYg9iv9QH?usp=sharing",
+        isAvailable: true,
       },
     ],
     tags: [
@@ -1551,27 +1581,37 @@ export const SUBJECT_RESOURCES = [
       {
         unitNumber: 1,
         title: "Finite Automata: DFA, NFA & Regular Expressions",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1_Yn08f96zFhgQz3W3Vugt1iWS8mwr51Z?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 2,
         title: "Regular Grammars, Pumping Lemma & Equivalence",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1RXjID4E_FObwyd1m8_AzXcbxhdqXfA5l?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 3,
         title: "Context-Free Grammars (CFG) & Chomsky Normal Form (CNF)",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/10LCXGFB3_qQpmrqekMO0eoEO0pY38auT?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 4,
         title: "Pushdown Automata (PDA) & Context-Free Languages",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1cOrpq-ZlK2rdgHXqaIDCua6V5GRC6y6v?usp=sharing",
+        isAvailable: true,
       },
       {
         unitNumber: 5,
         title: "Turing Machines, Church-Turing Thesis & Undecidability",
-        isAvailable: false,
+        notesUrl:
+          "https://drive.google.com/drive/folders/1shdCBCE5qSaCPiGAXewcsTcdqKbZhSZg?usp=sharing",
+        isAvailable: true,
       },
     ],
     tags: [
